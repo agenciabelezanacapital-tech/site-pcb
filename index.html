@@ -13,18 +13,13 @@
 <!-- Event snippet for CLIQUE WPP conversion page -->
 <script>
 function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
   gtag('event', 'conversion', {
       'send_to': 'AW-18382324624/JFHuCMzKqeEcEJCHsL1E',
       'value': 1.0,
       'currency': 'BRL',
-      'event_callback': callback
+      'transport_type': 'beacon'
   });
-  return false;
+  return true;
 }
 </script>
 <meta charset="UTF-8">
