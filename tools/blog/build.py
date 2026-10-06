@@ -43,7 +43,7 @@ GTAG = """<!-- Google tag (gtag.js) -->
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-18382324624');
-  var GA4_ID = 'G-XXXXXXXXXX';
+  var GA4_ID = 'G-9NR1V3DK4W';
   if (GA4_ID.indexOf('XXXX') === -1) { gtag('config', GA4_ID); }
 </script>
 <script>
