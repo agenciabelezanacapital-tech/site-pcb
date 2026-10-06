@@ -232,6 +232,7 @@ def page(a):
   </a>
 </div>
 
+<script src="../js/radar.js" defer></script>
 <script src="../js/script.js" defer></script>
 </body>
 </html>"""

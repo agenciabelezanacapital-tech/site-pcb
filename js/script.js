@@ -123,6 +123,20 @@ function initForm() {
     track('envio_formulario', { assunto: assunto });
     if (typeof gtag_report_conversion === 'function') { gtag_report_conversion(); }
 
+    // Grava o lead no radar antes de abrir o WhatsApp. Fire and forget:
+    // se o radar estiver fora do ar, a conversa acontece do mesmo jeito.
+    if (window.PCBRadar && window.PCBRadar.ativo) {
+      window.PCBRadar.enviar({
+        type: 'lead',
+        leadId: window.PCBRadar.gerarId(),
+        visitaId: window.PCBRadar.visitaId(),
+        pagina: window.location.pathname,
+        dispositivo: window.PCBRadar.dispositivo(),
+        referrer: document.referrer || '',
+        campos: { nome: nome, contato: contato, assunto: assunto, caso: caso }
+      }, false);
+    }
+
     var texto = 'Olá, vim pelo site.\nNome: ' + nome + '\nContato: ' + contato + '\nAssunto: ' + assunto + (caso ? '\nSituação: ' + caso : '');
 
     if (LEAD_ENDPOINT) {

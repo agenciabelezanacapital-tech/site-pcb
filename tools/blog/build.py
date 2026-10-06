@@ -98,6 +98,7 @@ def footer(up):
 <a href="{wa('Olá, vim pelo blog')}" onclick="return gtag_report_conversion();" class="wa-float" target="_blank" rel="noopener" aria-label="Conversar no WhatsApp">
   <svg class="ico-wa" width="30" height="30" fill="#fff" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>
 </a>
+<script src="{up}js/radar.js" defer></script>
 <script src="{up}js/script.js" defer></script>"""
 
 def faq_html(faq):
