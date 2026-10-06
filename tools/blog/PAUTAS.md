@@ -1,8 +1,16 @@
 # Pautas do blog PCB — fila de publicação
 
-Fonte: termos de busca reais que acionaram os anúncios da campanha de Google Ads
-do escritório. Publicar **um artigo por semana**, na ordem abaixo. Ao publicar,
-mover a linha para "Publicados" no fim deste arquivo.
+Fontes: termos de busca reais que acionaram os anúncios da campanha de Google Ads
+do escritório, e a lista de dúvidas frequentes levantada com os sócios no onboarding.
+
+Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
+"Publicados" no fim deste arquivo.
+
+> **Quando a fila ficar com menos de 10 linhas**, antes de publicar o artigo do dia,
+> acrescente 10 pautas novas no fim da tabela. Tire-as dos termos de busca recentes
+> da campanha (`get_search_terms` da conta 5436546086) e das perguntas que aparecem
+> no "Também se perguntam" do Google para os temas do escritório. Nunca repetir tema
+> já publicado: cada pauta precisa responder uma pergunta diferente.
 
 ## Fila
 
@@ -20,6 +28,49 @@ mover a linha para "Publicados" no fim deste arquivo.
 | 10 | Revisão de pensão alimentícia: quando pedir aumento ou redução | revisão de pensão alimentícia | Pensão alimentícia |
 | 11 | Até que idade o filho tem direito a pensão | até quando pagar pensão | Pensão alimentícia |
 | 12 | Testamento e planejamento sucessório: organizar em vida o que a família herda | como fazer testamento | Inventário e herança |
+| 13 | Preciso da autorização do meu cônjuge para me divorciar? | divórcio sem o consentimento do outro | Divórcio e partilha |
+| 14 | Divórcio judicial e extrajudicial: a diferença que muda prazo e custo | diferença divórcio judicial extrajudicial | Divórcio e partilha |
+| 15 | Divórcio com os cônjuges em cidades ou países diferentes | divórcio morando em cidades diferentes | Divórcio e partilha |
+| 16 | As dívidas do casal também são divididas no divórcio? | dívidas são divididas no divórcio | Divórcio e partilha |
+| 17 | Dá para vender um bem antes de concluir a partilha? | vender bem antes da partilha | Divórcio e partilha |
+| 18 | Imóvel financiado no divórcio: quem fica com o bem e com a dívida | partilha de imóvel financiado | Divórcio e partilha |
+| 19 | Comunhão parcial, universal e separação total: o que muda na prática | regime de bens casamento | Divórcio e partilha |
+| 20 | FGTS, previdência e participação nos lucros entram na partilha? | fgts entra na partilha de bens | Divórcio e partilha |
+| 21 | Empresa no divórcio: o que acontece com as cotas da sociedade | partilha de empresa divórcio | Divórcio e partilha |
+| 22 | Voltar a usar o nome de solteiro depois do divórcio | voltar nome de solteiro divórcio | Divórcio e partilha |
+| 23 | Separação de fato: a partir de quando os bens deixam de se comunicar | separação de fato partilha de bens | Divórcio e partilha |
+| 24 | Contrato de convivência: como blindar o patrimônio na união estável | contrato de união estável | Divórcio e partilha |
+| 25 | Quem são os herdeiros necessários e qual a parte que não se pode tirar | herdeiros necessários legítima | Inventário e herança |
+| 26 | O cônjuge herda? Como funciona a concorrência com os filhos | cônjuge tem direito a herança | Inventário e herança |
+| 27 | Companheiro em união estável tem direito à herança? | união estável direito a herança | Inventário e herança |
+| 28 | Meação e herança não são a mesma coisa | diferença meação e herança | Inventário e herança |
+| 29 | ITCMD no Distrito Federal: como funciona o imposto do inventário | itcmd inventário df | Inventário e herança |
+| 30 | Documentos necessários para abrir o inventário | documentos para inventário | Inventário e herança |
+| 31 | O que acontece com as dívidas de quem faleceu | dívidas do falecido herdeiros | Inventário e herança |
+| 32 | Como o inventário trata conta bancária, FGTS e seguro de vida | como sacar conta de falecido | Inventário e herança |
+| 33 | Inventário com um só herdeiro: como fica o procedimento | inventário de herdeiro único | Inventário e herança |
+| 34 | Doação em vida: quando ela antecipa a herança e quando não | doação em vida herança | Inventário e herança |
+| 35 | Holding familiar: o que é e para quem realmente faz sentido | holding familiar | Inventário e herança |
+| 36 | Sobrepartilha: quando aparece um bem depois do inventário encerrado | sobrepartilha bem esquecido | Inventário e herança |
+| 37 | Posso impedir as visitas do outro genitor? | impedir visita do pai | Guarda e convivência |
+| 38 | Mudar de cidade com o filho: o que a lei exige | mudar de cidade com filho guarda | Guarda e convivência |
+| 39 | Como regularizar a guarda quando nunca houve processo | regularizar guarda de filho | Guarda e convivência |
+| 40 | Guarda do pet: como a Justiça trata os animais na separação | guarda de cachorro separação | Guarda e convivência |
+| 41 | Visita dos avós: o direito de convivência da família extensa | direito de visita dos avós | Guarda e convivência |
+| 42 | Convivência de bebês e crianças pequenas: por que o calendário é diferente | convivência filho recém nascido | Guarda e convivência |
+| 43 | Reconhecimento de paternidade e exame de DNA | reconhecimento de paternidade | Guarda e convivência |
+| 44 | Guarda compartilhada quando os pais moram longe um do outro | guarda compartilhada pais em cidades diferentes | Guarda e convivência |
+| 45 | Viagem internacional com o filho: autorização e documentos | autorização de viagem para menor | Guarda e convivência |
+| 46 | Quem paga as despesas extras do filho além da pensão | despesas extras além da pensão | Pensão alimentícia |
+| 47 | Pensão para filho maior que está na faculdade | pensão para filho universitário | Pensão alimentícia |
+| 48 | Exoneração de pensão: como pedir o fim da obrigação | exoneração de pensão alimentícia | Pensão alimentícia |
+| 49 | Pensão alimentícia quando quem paga é autônomo ou informal | pensão de pai autônomo | Pensão alimentícia |
+| 50 | Alimentos gravídicos: pensão durante a gravidez | alimentos gravídicos | Pensão alimentícia |
+| 51 | Desconto em folha e bloqueio de conta na cobrança da pensão | desconto em folha pensão alimentícia | Pensão alimentícia |
+| 52 | Pensão entre ex-cônjuges: quando ela é devida e por quanto tempo | pensão para ex-esposa | Pensão alimentícia |
+| 53 | Acordo de pensão feito por fora tem valor? | acordo de pensão sem advogado | Pensão alimentícia |
+| 54 | Pensão e nascimento de outro filho: o que muda no valor | novo filho reduz pensão | Pensão alimentícia |
+| 55 | Prescrição da pensão atrasada: até quando dá para cobrar | prazo para cobrar pensão atrasada | Pensão alimentícia |
 
 ## Regras editoriais
 
