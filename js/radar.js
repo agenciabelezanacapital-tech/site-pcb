@@ -21,7 +21,7 @@
   'use strict';
 
   // >>> UNICO lugar do site onde a URL do Apps Script precisa ser colada <<<
-  var RADAR_ENDPOINT = '';
+  var RADAR_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxKhGsbGqRiBD6vLHUcGZYh080SW8bICKFh6SY3BFQqGXUcut8kQWEd-htuo5rRUOEvRQ/exec';
   var RADAR_TOKEN = 'pcb-radar-9bQ4mT2026';
 
   var ativo = typeof RADAR_ENDPOINT === 'string' && RADAR_ENDPOINT.indexOf('http') === 0;
