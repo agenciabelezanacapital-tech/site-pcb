@@ -266,8 +266,12 @@ def build_feed(posts):
 {its}</channel></rss>
 """
 
+LPS = ["advogado-divorcio-brasilia","advogado-inventario-brasilia",
+       "advogado-guarda-brasilia","advogado-pensao-alimenticia-brasilia"]
+
 def build_sitemap(posts):
     urls = [(BASE+"/", "monthly", "1.0", None), (BASE+"/blog/", "weekly", "0.8", None)]
+    urls += [(f"{BASE}/{sl}/", "monthly", "0.9", None) for sl in LPS]
     urls += [(f"{BASE}/blog/{p['slug']}/", "monthly", "0.7", p["data"]) for p in posts]
     body = ""
     for loc, cf, pr, lm in urls:
