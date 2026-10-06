@@ -64,6 +64,88 @@ function init() {
   initRevealOnScroll();
   initFaqAccordion();
   initNavToggle();
+  initTracking();
+  initForm();
+}
+
+
+
+/* ===== medicao e formulario ===== */
+var LEAD_ENDPOINT = ''; // quando houver endpoint proprio (Apps Script/Formspree), colar a URL aqui
+
+function track(nome, params) {
+  if (typeof gtag === 'function') { gtag('event', nome, params || {}); }
+}
+
+function initTracking() {
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      track('clique_whatsapp', { local: a.closest('section') ? (a.closest('section').id || 'secao') : 'topo' });
+    });
+  });
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+    a.addEventListener('click', function () { track('clique_telefone', {}); });
+  });
+  document.querySelectorAll('[data-evt="perfil-google"]').forEach(function (a) {
+    a.addEventListener('click', function () { track('clique_avaliacoes_google', {}); });
+  });
+
+  var marcos = [25, 50, 75, 100], vistos = {};
+  window.addEventListener('scroll', function () {
+    var h = document.documentElement;
+    var pct = (h.scrollTop + window.innerHeight) / h.scrollHeight * 100;
+    marcos.forEach(function (m) {
+      if (pct >= m && !vistos[m]) { vistos[m] = true; track('rolagem', { profundidade: m }); }
+    });
+  }, { passive: true });
+}
+
+function initForm() {
+  var form = document.getElementById('formCaso');
+  if (!form) return;
+  var nota = document.getElementById('formNota');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (document.getElementById('f-empresa').value) return; // honeypot
+
+    var nome = form.nome.value.trim();
+    var contato = form.contato.value.trim();
+    var assunto = form.assunto.value;
+    var caso = form.caso.value.trim();
+
+    if (!nome || !contato) {
+      nota.textContent = 'Preencha o nome e um contato para o escritório retornar.';
+      nota.className = 'form-nota erro';
+      return;
+    }
+
+    track('envio_formulario', { assunto: assunto });
+    if (typeof gtag_report_conversion === 'function') { gtag_report_conversion(); }
+
+    var texto = 'Olá, vim pelo site.\nNome: ' + nome + '\nContato: ' + contato + '\nAssunto: ' + assunto + (caso ? '\nSituação: ' + caso : '');
+
+    if (LEAD_ENDPOINT) {
+      nota.textContent = 'Enviando...';
+      nota.className = 'form-nota';
+      fetch(LEAD_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nome: nome, contato: contato, assunto: assunto, caso: caso, origem: 'site-pcb' })
+      }).then(function () {
+        form.reset();
+        nota.textContent = 'Recebemos o seu contato. O escritório retorna pelo número informado.';
+        nota.className = 'form-nota ok';
+      }).catch(function () {
+        window.open('https://wa.me/5561991193026?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+      });
+    } else {
+      window.open('https://wa.me/5561991193026?text=' + encodeURIComponent(texto), '_blank', 'noopener');
+      form.reset();
+      nota.textContent = 'Abrimos o WhatsApp com o seu resumo pronto. É só enviar.';
+      nota.className = 'form-nota ok';
+    }
+  });
 }
 
 if (document.readyState === 'loading') {

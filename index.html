@@ -9,6 +9,9 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-18382324624');
+  // GA4: trocar G-XXXXXXXXXX pelo ID da propriedade do escritorio
+  var GA4_ID = 'G-XXXXXXXXXX';
+  if (GA4_ID.indexOf('XXXX') === -1) { gtag('config', GA4_ID); }
 </script>
 <!-- Event snippet for CLIQUE WPP conversion page -->
 <script>
@@ -23,6 +26,7 @@ function gtag_report_conversion(url) {
 }
 </script>
 <meta charset="UTF-8">
+<script>document.documentElement.className+=" js";</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="dark">
 <title>PCB Advogados | Direito de Família e Sucessões em Brasília</title>
@@ -203,9 +207,13 @@ function gtag_report_conversion(url) {
     <a href="#socios">Sócios</a>
     <a href="#duvidas">Dúvidas</a>
     <a href="#locais">Localização</a>
-    <a href="#contato">Contato</a>
+    <a href="#falar">Contato</a>
   </nav>
   <div class="bar-actions">
+    <a href="tel:+5561991193026" class="bar-tel" data-evt="telefone" aria-label="Ligar para o escritório">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>
+      <span>(61) 99119-3026</span>
+    </a>
     <a href="https://wa.me/5561991193026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20entender%20meu%20caso" onclick="return gtag_report_conversion('https://wa.me/5561991193026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20entender%20meu%20caso');" class="bar-cta" target="_blank" rel="noopener">Falar com um advogado</a>
     <button type="button" class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu de navegação">
       <span></span><span></span><span></span>
@@ -221,14 +229,20 @@ function gtag_report_conversion(url) {
     <h1 class="reveal d1">Quando família, patrimônio e futuro se misturam, <em>você precisa de clareza antes de decidir</em></h1>
     <p class="hero-lead reveal d2"><strong>Divórcio, inventário, guarda, pensão ou partilha.</strong> O PCB ajuda você a entender seus direitos, os riscos e os caminhos possíveis antes de dar o próximo passo.</p>
     <div class="hero-kicker reveal d2">
-      <span>Sem juridiquês</span><span>Presencial ou online</span><span>Duas unidades em Brasília</span>
+      <span>Primeira conversa sem custo</span><span>Resposta em até 1 hora no horário comercial</span><span>Presencial ou online</span>
+    </div>
+    <div class="hero-areas reveal d2" aria-label="Escolha a sua situação">
+      <a href="#area-divorcio">Divórcio e partilha</a>
+      <a href="#area-inventario">Inventário e herança</a>
+      <a href="#area-guarda">Guarda e convivência</a>
+      <a href="#area-pensao">Pensão alimentícia</a>
     </div>
     <div class="hero-actions reveal d3">
       <a href="https://wa.me/5561991193026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20entender%20melhor%20o%20meu%20caso" onclick="return gtag_report_conversion('https://wa.me/5561991193026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20entender%20melhor%20o%20meu%20caso');" class="btn-wa" target="_blank" rel="noopener">
         <svg class="ico-wa" width="21" height="21" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>
         Quero entender meu caso
       </a>
-      <a href="#dores" class="btn-ghost">Ver como podemos ajudar</a>
+      <a href="#falar" class="btn-ghost">Prefiro escrever meu caso</a>
     </div>
     <div class="hero-proof reveal d3">
       <div class="proof"><b>12 anos de atuação</b><span>Experiência aplicada a decisões sensíveis.</span></div>
@@ -237,6 +251,78 @@ function gtag_report_conversion(url) {
     </div>
   </div>
 </section>
+
+
+<!-- PROVA SOCIAL -->
+<section class="sec-prova" id="avaliacoes"><div class="wrap">
+  <div class="prova-top">
+    <div class="prova-nota">
+      <div class="estrelas" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+      </div>
+      <div class="prova-txt">
+        <b>5,0 de 5</b>
+        <span>51 avaliações de clientes no Google</span>
+      </div>
+    </div>
+    <a class="prova-link" href="https://maps.google.com/maps?cid=1482512693113634362" target="_blank" rel="noopener" data-evt="perfil-google">Ver as avaliações no Google</a>
+  </div>
+  <div class="depos">
+    <figure class="depo">
+      <blockquote>Explicam de forma bem didática para as pessoas que não entendem do Direito. Quanto ao preço, cada caso é um caso, mas achei bem negociável.</blockquote>
+      <figcaption>Yhury Oliveira <span>avaliação no Google</span></figcaption>
+    </figure>
+    <figure class="depo">
+      <blockquote>Atenciosos, competentes e transmitiram total confiança desde o primeiro contato. Ambiente acolhedor, a gente se sente bem cuidado em cada etapa do processo.</blockquote>
+      <figcaption>Nadya da Rosa <span>avaliação no Google</span></figcaption>
+    </figure>
+    <figure class="depo">
+      <blockquote>Destaco a clareza nas orientações, a disponibilidade da equipe e a boa comunicação ao longo do trabalho. Minha experiência foi bastante positiva.</blockquote>
+      <figcaption>Edivaldo Bazilio <span>avaliação no Google</span></figcaption>
+    </figure>
+  </div>
+</div></section>
+
+<!-- AREAS -->
+<section id="areas"><div class="wrap">
+  <p class="eyebrow mono reveal">Atuação focada nos momentos que mais exigem decisão</p>
+  <h2 class="reveal">Como o PCB pode atuar no seu caso</h2>
+  <p class="lead reveal d1">Quatro frentes que concentram a maior parte dos casos do escritório. Encontre a sua situação e veja como o PCB conduz esse tipo de caso.</p>
+  <div class="areas">
+    <div id="area-divorcio" class="area core reveal">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 7h20M5 12l-3 5h6zM19 12l-3 5h6z"/></svg></div>
+      <span class="painline">Quando a relação termina, mas ainda há decisões a tomar</span>
+      <h3>Divórcio, União Estável e Partilha</h3>
+      <p>Divórcio ou dissolução de união estável, consensual ou litigioso, judicial ou extrajudicial, com orientação sobre partilha de bens, acordos e próximos passos.</p>
+    </div>
+    <div id="area-inventario" class="area core reveal d1">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+      <span class="painline">Quando uma perda também traz obrigações e decisões patrimoniais</span>
+      <h3>Inventário e Sucessões</h3>
+      <p>Inventário judicial ou extrajudicial (em cartório), herança, testamento, holding familiar e planejamento sucessório, com organização do procedimento e visão do patrimônio como um todo.</p>
+    </div>
+    <div id="area-guarda" class="area core reveal">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"/><path d="M16 3.1a3 3 0 010 5.8"/></svg></div>
+      <span class="painline">Quando os filhos precisam de previsibilidade no meio da mudança</span>
+      <h3>Guarda e Convivência</h3>
+      <p>Guarda unilateral ou compartilhada, regulamentação de convivência e alienação parental, buscando segurança jurídica e preservação do bem-estar da criança.</p>
+    </div>
+    <div id="area-pensao" class="area core reveal d1">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
+      <span class="painline">Quando o valor precisa ser definido, revisto ou cobrado</span>
+      <h3>Pensão Alimentícia</h3>
+      <p>Fixação, revisão, exoneração e execução de pensão atrasada, com análise das necessidades, possibilidades e particularidades do caso.</p>
+    </div>
+  </div>
+  <div class="secondary-areas reveal"><p><strong>Outras frentes do escritório:</strong> contratos e questões imobiliárias também fazem parte da atuação do PCB, sem desviar o foco principal desta página de Família e Sucessões.</p></div>
+  <div class="section-cta reveal"><p>Não sabe em qual dessas situações o seu caso se encaixa? A gente ajuda a identificar.</p><a href="https://wa.me/5561991193026?text=Ol%C3%A1%2C%20n%C3%A3o%20sei%20em%20qual%20%C3%A1rea%20meu%20caso%20se%20encaixa%2C%20pode%20me%20ajudar%3F" onclick="return gtag_report_conversion('https://wa.me/5561991193026?text=Ol%C3%A1%2C%20n%C3%A3o%20sei%20em%20qual%20%C3%A1rea%20meu%20caso%20se%20encaixa%2C%20pode%20me%20ajudar%3F');" class="btn-wa" target="_blank" rel="noopener"><svg class="ico-wa" width="19" height="19" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>Perguntar qual área atende meu caso</a></div>
+</div></section>
+
+
 
 <!-- DOR / EMPATIA -->
 <section class="sec-alt" id="dores"><div class="wrap">
@@ -268,43 +354,6 @@ function gtag_report_conversion(url) {
     </div>
   </div>
   <div class="section-cta reveal"><p>Quer sentir na prática como é esse atendimento? Comece uma conversa sem compromisso.</p><a href="https://wa.me/5561991193026?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20atendimento%20do%20PCB" onclick="return gtag_report_conversion('https://wa.me/5561991193026?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20o%20atendimento%20do%20PCB');" class="btn-wa" target="_blank" rel="noopener"><svg class="ico-wa" width="19" height="19" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>Conhecer o atendimento</a></div>
-</div></section>
-
-
-
-<!-- AREAS -->
-<section id="areas"><div class="wrap">
-  <p class="eyebrow mono reveal">Atuação focada nos momentos que mais exigem decisão</p>
-  <h2 class="reveal">Como o PCB pode atuar no seu caso</h2>
-  <p class="lead reveal d1">A página deixa de falar apenas o nome do serviço e passa a mostrar o problema que cada área resolve. Assim, quem chega pelo Google se reconhece rapidamente.</p>
-  <div class="areas">
-    <div class="area core reveal">
-      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 7h20M5 12l-3 5h6zM19 12l-3 5h6z"/></svg></div>
-      <span class="painline">Quando a relação termina, mas ainda há decisões a tomar</span>
-      <h3>Divórcio, União Estável e Partilha</h3>
-      <p>Divórcio ou dissolução de união estável, consensual ou litigioso, judicial ou extrajudicial, com orientação sobre partilha de bens, acordos e próximos passos.</p>
-    </div>
-    <div class="area core reveal d1">
-      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
-      <span class="painline">Quando uma perda também traz obrigações e decisões patrimoniais</span>
-      <h3>Inventário e Sucessões</h3>
-      <p>Inventário judicial ou extrajudicial (em cartório), herança, testamento, holding familiar e planejamento sucessório, com organização do procedimento e visão do patrimônio como um todo.</p>
-    </div>
-    <div class="area core reveal">
-      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="9" cy="7" r="3"/><path d="M2 21v-2a5 5 0 015-5h4a5 5 0 015 5v2"/><path d="M16 3.1a3 3 0 010 5.8"/></svg></div>
-      <span class="painline">Quando os filhos precisam de previsibilidade no meio da mudança</span>
-      <h3>Guarda e Convivência</h3>
-      <p>Guarda unilateral ou compartilhada, regulamentação de convivência e alienação parental, buscando segurança jurídica e preservação do bem-estar da criança.</p>
-    </div>
-    <div class="area core reveal d1">
-      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg></div>
-      <span class="painline">Quando o valor precisa ser definido, revisto ou cobrado</span>
-      <h3>Pensão Alimentícia</h3>
-      <p>Fixação, revisão, exoneração e execução de pensão atrasada, com análise das necessidades, possibilidades e particularidades do caso.</p>
-    </div>
-  </div>
-  <div class="secondary-areas reveal"><p><strong>Outras frentes do escritório:</strong> contratos e questões imobiliárias também fazem parte da atuação do PCB, sem desviar o foco principal desta página de Família e Sucessões.</p></div>
-  <div class="section-cta reveal"><p>Não sabe em qual dessas situações o seu caso se encaixa? A gente ajuda a identificar.</p><a href="https://wa.me/5561991193026?text=Ol%C3%A1%2C%20n%C3%A3o%20sei%20em%20qual%20%C3%A1rea%20meu%20caso%20se%20encaixa%2C%20pode%20me%20ajudar%3F" onclick="return gtag_report_conversion('https://wa.me/5561991193026?text=Ol%C3%A1%2C%20n%C3%A3o%20sei%20em%20qual%20%C3%A1rea%20meu%20caso%20se%20encaixa%2C%20pode%20me%20ajudar%3F');" class="btn-wa" target="_blank" rel="noopener"><svg class="ico-wa" width="19" height="19" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>Perguntar qual área atende meu caso</a></div>
 </div></section>
 
 
@@ -399,6 +448,49 @@ function gtag_report_conversion(url) {
     Conversar com o PCB no WhatsApp
   </a>
 </section>
+
+
+<!-- FALAR COM O ESCRITORIO -->
+<section class="sec-falar" id="falar"><div class="wrap">
+  <div class="falar-grid">
+    <div class="falar-txt">
+      <p class="eyebrow mono">Três formas de começar</p>
+      <h2>Conte o que está acontecendo. <em>A primeira conversa não tem custo.</em></h2>
+      <p class="lead">Você escolhe o caminho mais confortável. No horário comercial, a resposta costuma sair em até uma hora. Nada do que você escrever aqui é compartilhado fora do escritório.</p>
+      <div class="falar-vias">
+        <a class="via via-wa" href="https://wa.me/5561991193026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20entender%20melhor%20o%20meu%20caso" target="_blank" rel="noopener" onclick="return gtag_report_conversion('https://wa.me/5561991193026?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20entender%20melhor%20o%20meu%20caso');">
+          <svg class="ico-wa" width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>
+          <span><b>WhatsApp</b>Conversa direta com o escritório</span>
+        </a>
+        <a class="via" href="tel:+5561991193026" data-evt="telefone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>
+          <span><b>(61) 99119-3026</b>Ligação de segunda a sexta</span>
+        </a>
+      </div>
+    </div>
+
+    <form class="falar-form" id="formCaso" novalidate>
+      <p class="form-tit">Prefere escrever? Responda em um minuto</p>
+      <label for="f-nome">Seu nome</label>
+      <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos te chamar">
+      <label for="f-contato">WhatsApp ou telefone</label>
+      <input id="f-contato" name="contato" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(61) 90000-0000">
+      <label for="f-assunto">Qual é o assunto</label>
+      <select id="f-assunto" name="assunto">
+        <option value="Divórcio e partilha">Divórcio e partilha</option>
+        <option value="Inventário e herança">Inventário e herança</option>
+        <option value="Guarda e convivência">Guarda e convivência</option>
+        <option value="Pensão alimentícia">Pensão alimentícia</option>
+        <option value="Outro assunto">Outro assunto</option>
+      </select>
+      <label for="f-caso">Em poucas palavras, o que está acontecendo</label>
+      <textarea id="f-caso" name="caso" rows="3" placeholder="Não precisa saber o nome jurídico do problema"></textarea>
+      <input type="text" name="empresa" id="f-empresa" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button type="submit" class="form-btn">Enviar para o escritório</button>
+      <p class="form-nota" id="formNota">Ao enviar, você recebe o retorno pelo contato informado. Conteúdo informativo, sem promessa de resultado.</p>
+    </form>
+  </div>
+</div></section>
 
 <!-- LOCAIS -->
 <section id="locais"><div class="wrap">
