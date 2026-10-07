@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from areas import AREAS
 
 ROOT = pathlib.Path(sys.argv[1]).resolve()
-BASE = "https://site-pcb.vercel.app"
+BASE = "https://www.pcbadvogadosassociados.com.br"
 GA4 = "G-9NR1V3DK4W"
 
 def wa(t): return "https://wa.me/5561991193026?text=" + urllib.parse.quote(t)

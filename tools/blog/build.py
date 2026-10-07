@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from posts import POSTS
 
 ROOT = pathlib.Path(sys.argv[1]).resolve()   # raiz do repo site-pcb
-BASE = "https://site-pcb.vercel.app"
+BASE = "https://www.pcbadvogadosassociados.com.br"
 WA = "https://wa.me/5561991193026"
 
 AREA_ANCHOR = {

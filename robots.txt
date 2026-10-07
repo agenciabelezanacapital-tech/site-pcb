@@ -35,4 +35,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://site-pcb.vercel.app/sitemap.xml
+Sitemap: https://www.pcbadvogadosassociados.com.br/sitemap.xml
