@@ -267,4 +267,86 @@ POSTS = [
   ("Dá para evitar a partilha em união estável?","Sim, por meio de contrato de convivência que estabeleça regime diverso da comunhão parcial. Ele produz efeitos a partir da celebração.")
  ]
 },
+{
+ "slug":"divorcio-em-cartorio-quando-e-possivel",
+ "titulo":"Divórcio em cartório: quando é possível e quanto tempo leva",
+ "title_tag":"Divórcio em cartório: quando é possível | PCB Advogados",
+ "description":"Divórcio em cartório exige acordo total, sem filhos menores e sem gravidez. Veja requisitos, documentos, prazos e quando o caso precisa ir ao juiz.",
+ "keyword":"divórcio em cartório",
+ "area":"Divórcio e partilha",
+ "data":"2026-10-07",
+ "corpo":"""
+<p class="chamada">O divórcio em cartório é o caminho mais curto que a lei brasileira oferece para encerrar um casamento. Ele não está aberto a todos os casos: existem três condições objetivas, e basta faltar uma delas para que o divórcio tenha de ser pedido ao Judiciário, ainda que marido e mulher estejam em pleno acordo.</p>
+
+<h2>As três condições que o cartório exige</h2>
+<p>O divórcio extrajudicial é feito por escritura pública lavrada em cartório de notas e dispensa processo judicial. Para que o tabelião possa lavrar essa escritura, três requisitos precisam estar presentes ao mesmo tempo.</p>
+<ol class="passos">
+  <li><strong>Acordo integral entre os cônjuges.</strong> Não basta concordar com o fim do casamento. É preciso ter fechado também a partilha dos bens, a questão do uso do nome e, se for o caso, a pensão entre os ex-cônjuges. Qualquer ponto em aberto impede a lavratura.</li>
+  <li><strong>Ausência de filhos menores de idade ou incapazes.</strong> Havendo filho menor ou pessoa incapaz, a lei exige manifestação do Ministério Público, que atua apenas no processo judicial. O cartório fica fora de questão mesmo com acordo total entre os pais.</li>
+  <li><strong>Ausência de gravidez em curso.</strong> A existência de nascituro também desloca o caso para o Judiciário, porque há interesse de quem ainda vai nascer a ser resguardado.</li>
+</ol>
+<p>Há ainda uma exigência que não é condição, mas formalidade indispensável: a presença de advogado no ato. É ele quem redige a minuta da escritura, responde pela correção jurídica da partilha e assina o documento junto com as partes. Um mesmo advogado pode assistir os dois cônjuges quando não existe conflito de interesses entre eles, e cada parte também pode ter o seu.</p>
+
+<h2>O que a escritura resolve de uma vez</h2>
+<p>A vantagem do cartório não está apenas na velocidade. Está na concentração: uma única escritura pode resolver, no mesmo documento, assuntos que no Judiciário às vezes se arrastam em etapas separadas.</p>
+<ul class="lista">
+  <li><strong>A dissolução do vínculo conjugal</strong>, que será averbada na certidão de casamento junto ao registro civil.</li>
+  <li><strong>A partilha dos bens</strong>, com a descrição de quem fica com o quê. Para imóveis, a escritura serve de título para registro na matrícula.</li>
+  <li><strong>O uso do nome</strong>, com a opção de voltar ao nome de solteiro ou de mantê-lo.</li>
+  <li><strong>A pensão entre os ex-cônjuges</strong>, quando houver, inclusive com prazo de duração definido no próprio acordo.</li>
+</ul>
+<p>É possível ainda decretar o divórcio no cartório e deixar a partilha para um momento posterior. A lei permite, e em alguns casos essa é a melhor decisão, por exemplo quando a avaliação de uma empresa ainda não está pronta. O risco é manter o patrimônio em condomínio por tempo indeterminado e precisar de um segundo ato para dividi-lo depois.</p>
+
+<h2>Documentos que o cartório pede</h2>
+<p>A maior parte do tempo de um divórcio extrajudicial é gasta reunindo papel, não assinando. Vale levantar desde o início:</p>
+<ul class="lista">
+  <li>Certidão de casamento atualizada, em via recente;</li>
+  <li>Documento de identidade e CPF dos dois cônjuges;</li>
+  <li>Pacto antenupcial, quando o regime de bens não for o legal;</li>
+  <li>Matrícula atualizada de cada imóvel, além do documento de arrecadação do imposto predial e das certidões que o cartório exigir;</li>
+  <li>Saldo devedor e posição atualizada de financiamentos, se houver imóvel ou veículo financiado;</li>
+  <li>Documento de propriedade de veículos;</li>
+  <li>Contrato social e balanço, quando um dos cônjuges é sócio de empresa;</li>
+  <li>Extratos de contas, aplicações e previdência privada que serão partilhados.</li>
+</ul>
+<p>Cada cartório tem sua lista própria de certidões, e ela varia conforme o estado e conforme o tipo de bem envolvido. A conferência prévia com o tabelionato evita refazer a minuta.</p>
+
+<h2>Quanto tempo leva, na prática</h2>
+<p>Não existe fila no cartório como existe em uma vara de família. Isso muda a natureza do prazo: ele deixa de depender da pauta do Judiciário e passa a depender quase inteiramente da documentação e do acordo. Cumpridas as condições e reunidos os documentos, a escritura costuma ser lavrada em uma única sessão, depois de a minuta ser aprovada pelas partes e pelo tabelião.</p>
+<p>Alguns fatores alongam esse caminho e vale conhecê-los antes:</p>
+<ul class="lista">
+  <li><strong>Anuência de banco em bem financiado.</strong> Transferir a titularidade de um imóvel com financiamento ativo depende da instituição credora, e o prazo é dela, não do cartório.</li>
+  <li><strong>Partilha desigual.</strong> Quando um cônjuge fica com parte maior do que lhe caberia pelo regime de bens, a diferença pode ser tratada como doação e atrair o imposto estadual de transmissão. As regras, as alíquotas e as hipóteses de isenção variam de estado para estado, e isso precisa ser verificado antes da assinatura.</li>
+  <li><strong>Averbação e registro.</strong> A escritura não encerra o serviço. Ela ainda precisa ser averbada na certidão de casamento e registrada na matrícula dos imóveis. Esses prazos variam por serventia.</li>
+  <li><strong>Bens em outro estado ou país.</strong> A existência de patrimônio fora do país, em especial, costuma exigir providências adicionais e análise específica.</li>
+</ul>
+<p>Os emolumentos do cartório são fixados por tabela estadual e não se confundem com a atuação do advogado. Por isso o custo total de um divórcio extrajudicial muda conforme a unidade da federação e conforme o valor do patrimônio partilhado.</p>
+
+<h2>Quando o caso precisa ir ao juiz mesmo havendo acordo</h2>
+<p>Algumas situações afastam a via do cartório independentemente da boa relação entre as partes:</p>
+<ul class="lista">
+  <li>Filho menor de idade ou filho maior incapaz, ainda que guarda e pensão já estejam combinadas;</li>
+  <li>Gravidez em curso;</li>
+  <li>Cônjuge que não pode manifestar validamente a vontade, por exemplo em caso de interdição;</li>
+  <li>Cônjuge que não é localizado ou que simplesmente não comparece para assinar;</li>
+  <li>Divergência sobre um único ponto, como a destinação de um imóvel, que basta para derrubar o requisito do acordo integral.</li>
+</ul>
+<p>A ida ao Judiciário nesses casos não significa litígio. Existe o divórcio consensual judicial, em que as partes apresentam o acordo já pronto e o juiz apenas o homologa, depois da manifestação do Ministério Público quando ela é necessária.</p>
+
+<h2>Erros que fazem o cartório devolver a minuta</h2>
+<p>Alguns problemas aparecem com frequência e podem ser evitados com preparação:</p>
+<ul class="lista">
+  <li><strong>Descrição imprecisa do imóvel.</strong> A escritura precisa reproduzir a matrícula. Divergência de metragem, de confrontação ou de nome de proprietário trava o registro depois.</li>
+  <li><strong>Dívidas ignoradas.</strong> O acordo divide os bens e esquece o passivo. Financiamento, consórcio, cartão e dívida de condomínio precisam ter destino definido.</li>
+  <li><strong>Pensão de filho dentro da escritura.</strong> Alimentos de filho menor não são objeto do divórcio extrajudicial. Quando há filho menor, o caso inteiro é judicial.</li>
+  <li><strong>Regime de bens aplicado sem conferência.</strong> Imóvel comprado antes do casamento e quitado durante, herança recebida na constância da união e valorização de cota societária têm tratamento próprio e não se resolvem pela regra geral.</li>
+</ul>
+<p>Em resumo, o divórcio em cartório é rápido porque transfere o esforço para a fase anterior ao ato: definir o acordo, conferir o regime de bens e reunir a documentação. Quando essa etapa é feita com cuidado, a assinatura é a parte simples. Se quiser entender qual via se aplica ao seu caso, vale reunir a certidão de casamento e a relação dos bens antes da conversa com um advogado.</p>
+""",
+ "faq":[
+  ("Divórcio em cartório precisa de advogado?","Sim. A presença de advogado é obrigatória na escritura pública de divórcio. Ele redige a minuta, responde pela correção jurídica da partilha e assina o ato com as partes. Um mesmo advogado pode assistir os dois cônjuges quando não há conflito de interesses."),
+  ("Tenho filho menor de idade e estamos de acordo. Posso usar o cartório?","Não. A existência de filho menor ou incapaz exige a manifestação do Ministério Público, que atua somente no processo judicial. O acordo continua valendo: ele é apresentado ao juiz em um divórcio consensual judicial, para homologação."),
+  ("Dá para se divorciar em cartório sem dividir os bens agora?","Sim. A lei permite decretar o divórcio e deixar a partilha para depois. É uma decisão estratégica: evita travar o divórcio por causa de um bem de avaliação complexa, mas mantém o patrimônio em condomínio e exige um segundo ato para a divisão.")
+ ]
+},
 ]
