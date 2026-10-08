@@ -349,4 +349,70 @@ POSTS = [
   ("Dá para se divorciar em cartório sem dividir os bens agora?","Sim. A lei permite decretar o divórcio e deixar a partilha para depois. É uma decisão estratégica: evita travar o divórcio por causa de um bem de avaliação complexa, mas mantém o patrimônio em condomínio e exige um segundo ato para a divisão.")
  ]
 },
+{
+ "slug":"quanto-custa-um-divorcio-no-distrito-federal",
+ "titulo":"Quanto custa um divórcio no Distrito Federal",
+ "title_tag":"Quanto custa um divórcio no DF: o que entra na conta | PCB",
+ "description":"Custas, emolumentos, imposto na partilha desigual e honorários: entenda as parcelas que formam o custo de um divórcio no Distrito Federal.",
+ "keyword":"quanto custa advogado para divórcio",
+ "area":"Divórcio e partilha",
+ "data":"2026-10-08",
+ "corpo":"""
+<p class="chamada">Quem procura um advogado para se divorciar quer saber, antes de qualquer coisa, quanto o processo vai custar. A pergunta é legítima, mas a resposta não é um número único: o custo de um divórcio é a soma de parcelas diferentes, pagas a destinatários diferentes, e boa parte delas depende de decisões tomadas no início do caso.</p>
+
+<h2>As quatro parcelas que compõem o custo</h2>
+<p>Em qualquer divórcio, judicial ou em cartório, o dinheiro gasto se distribui em até quatro grupos. Confundir um grupo com o outro é a principal razão pela qual as estimativas que circulam na internet variam tanto.</p>
+<ul class="lista">
+  <li><strong>Custas judiciais ou emolumentos notariais.</strong> São valores devidos ao Estado, no caso do processo judicial, ou ao cartório, no caso da escritura pública. Seguem tabelas oficiais e não são negociáveis entre as partes.</li>
+  <li><strong>Tributos sobre a transmissão de bens.</strong> Aparecem apenas quando a partilha transfere patrimônio além daquilo que já cabia a cada um. Nem todo divórcio gera imposto.</li>
+  <li><strong>Despesas do caso.</strong> Certidões, matrícula atualizada do imóvel, avaliação de bens, registro da partilha e averbação do divórcio no registro civil.</li>
+  <li><strong>Honorários advocatícios.</strong> Contratados entre a parte e o advogado, conforme a complexidade do trabalho a ser feito.</li>
+</ul>
+<p>O peso de cada grupo muda radicalmente de um caso para outro. Em um divórcio consensual sem bens a partilhar, o grupo dos tributos simplesmente não existe. Em um divórcio com imóveis e participação em empresa, ele pode ser a maior parcela de todas.</p>
+
+<h2>Custas judiciais e emolumentos de cartório no DF</h2>
+<p>No Distrito Federal, as custas do processo judicial são fixadas em tabela própria do Tribunal de Justiça e calculadas, como regra, sobre o valor atribuído à causa. Em divórcio com partilha, esse valor normalmente corresponde ao patrimônio que será dividido, o que significa que o custo processual acompanha o tamanho do acervo, respeitados os limites mínimo e máximo previstos na legislação distrital.</p>
+<p>Na via extrajudicial não há custas judiciais, mas há emolumentos notariais, também definidos por tabela oficial e também proporcionais ao valor dos bens envolvidos. Daí uma conclusão que surpreende muita gente: <strong>o cartório não é automaticamente mais barato</strong>. Ele é mais rápido e mais previsível em prazo. Em acervos maiores, o valor dos emolumentos pode se aproximar do que se gastaria em custas judiciais.</p>
+<p>As duas tabelas são atualizadas periodicamente. Qualquer valor encontrado em texto antigo precisa ser conferido na tabela vigente antes de servir como referência.</p>
+
+<h2>Quando a partilha gera imposto</h2>
+<p>Esta é a parcela mais ignorada nas estimativas caseiras e a que mais costuma surpreender depois. A regra de partida é simples: a divisão do patrimônio comum em partes iguais não é transmissão de bens, é apenas a separação daquilo que já pertencia aos dois. Nesse cenário não há imposto de transmissão.</p>
+<p>A situação muda quando a partilha é desigual, ou seja, quando um dos cônjuges fica com parcela maior do que a que lhe cabia. O excedente passa a ser tratado como transmissão, e o tributo incidente depende da natureza dela:</p>
+<ul class="lista">
+  <li>Se o excedente é entregue sem contrapartida, a hipótese é de doação, e incide o imposto sobre transmissão por doação (ITCMD).</li>
+  <li>Se há contrapartida, por exemplo quando um cônjuge fica com o imóvel e compensa o outro em dinheiro, a hipótese é onerosa, e incide o imposto sobre transmissão de bens imóveis (ITBI).</li>
+</ul>
+<p>Alíquotas, isenções, faixas e forma de apuração desses tributos variam conforme o estado ou o Distrito Federal, e mudam ao longo do tempo. Por isso não existe percentual único aplicável a todo divórcio no país. O que existe é a necessidade de verificar a legislação vigente no lugar onde o bem está registrado antes de fechar o desenho da partilha.</p>
+<p>Há ainda o custo de registro. A transferência de imóvel exige registro na matrícula, e o divórcio precisa ser averbado no registro civil. Os dois atos têm emolumentos próprios.</p>
+
+<h2>Honorários advocatícios: o que faz o trabalho variar</h2>
+<p>Honorários não têm valor de prateleira, e este texto não traz cifras porque o Código de Ética e Disciplina da OAB e o Provimento 205 tratam a divulgação de preços de serviços advocatícios como prática vedada. O que é possível, e mais útil, é explicar <strong>o que faz o trabalho ser maior ou menor</strong>:</p>
+<ul class="lista">
+  <li><strong>Existência de consenso.</strong> Um acordo integral permite um único ato notarial ou um único pedido de homologação. A falta de acordo abre fase probatória, com manifestações e provas.</li>
+  <li><strong>Complexidade do patrimônio.</strong> Imóvel financiado, cotas de empresa, bens situados em outro estado, investimentos e previdência exigem análise específica de regime de bens.</li>
+  <li><strong>Número de questões envolvidas.</strong> Divórcio, partilha, guarda, convivência e alimentos são temas distintos. Podem caminhar no mesmo pedido ou exigir medidas separadas.</li>
+  <li><strong>Necessidade de prova técnica.</strong> Avaliação de imóvel, perícia contábil em empresa e estudo psicossocial alongam a instrução do caso.</li>
+  <li><strong>Existência de medidas urgentes.</strong> Alimentos provisórios, discussão sobre uso do imóvel comum ou pedido de indisponibilidade de bens são atuações adicionais à ação principal.</li>
+</ul>
+<p>A OAB do Distrito Federal publica tabela de honorários que serve como parâmetro de referência da classe, e o Código de Ética veda o aviltamento da profissão, isto é, a cobrança em patamar incompatível com o trabalho exigido. Na prática, o que o cliente deve exigir é contrato escrito, com o escopo do serviço delimitado, a forma de pagamento e a indicação clara do que está e do que não está incluído, em especial se a partilha será feita no mesmo ato ou em procedimento posterior.</p>
+
+<h2>Decisões que mudam o custo final</h2>
+<ol class="passos">
+  <li><strong>Mapear o patrimônio antes de abrir o caso.</strong> Matrícula atualizada, saldo devedor de financiamento, contrato social e extratos. Documento faltando é o principal gerador de retrabalho, e retrabalho é custo.</li>
+  <li><strong>Atribuir valor aos bens com critério.</strong> Como custas e emolumentos seguem o valor do acervo, uma avaliação mal feita afeta o custo processual nos dois sentidos.</li>
+  <li><strong>Desenhar a partilha considerando o tributo.</strong> Duas divisões que parecem equivalentes entre si podem ter consequências fiscais bem diferentes, dependendo de como o excedente é compensado.</li>
+  <li><strong>Decidir se a partilha vai agora ou depois.</strong> A lei permite decretar o divórcio e partilhar em momento posterior. Isso pode destravar um caso, mas mantém o patrimônio em condomínio e implica um segundo procedimento, com custo novo.</li>
+  <li><strong>Buscar acordo mesmo em caso iniciado como litigioso.</strong> Acordo parcial durante o processo encurta o caminho e reduz despesas, e é possível em qualquer fase.</li>
+</ol>
+
+<h2>O que a lei prevê para quem não pode pagar as custas</h2>
+<p>O Código de Processo Civil prevê a gratuidade de justiça para quem comprova insuficiência de recursos para arcar com custas e despesas processuais. O pedido é feito no próprio processo e analisado pelo juiz, que pode conceder a dispensa, a redução ou o parcelamento. Existe também a Defensoria Pública, que atende quem se enquadra nos critérios de hipossuficiência definidos pela instituição. São institutos previstos em lei, com requisitos próprios de comprovação, e não se confundem com a contratação de advogado particular.</p>
+<p>Em resumo, não há como responder quanto custa um divórcio sem antes saber se existe acordo, qual é o regime de bens, qual é o acervo a partilhar e se há filhos menores. Reunir a certidão de casamento, a relação de bens com os respectivos documentos e a informação sobre as dívidas do casal é o passo que transforma a pergunta sobre custo em estimativa concreta, em vez de palpite.</p>
+""",
+ "faq":[
+  ("Divórcio em cartório é sempre mais barato que o judicial?","Não necessariamente. O cartório dispensa custas judiciais, mas cobra emolumentos notariais que também são proporcionais ao valor dos bens. A vantagem mais consistente da via extrajudicial é a rapidez e a previsibilidade de prazo, não o preço. Em acervos maiores, os valores podem se aproximar."),
+  ("A partilha de bens no divórcio paga imposto?","A divisão do patrimônio comum em partes iguais não é transmissão e, por isso, não gera imposto. Se a partilha é desigual, o excedente é tributado: como doação (ITCMD) quando não há contrapartida, ou como transmissão onerosa (ITBI) quando há compensação. Alíquotas e isenções variam conforme o estado ou o Distrito Federal."),
+  ("Como são definidos os honorários do advogado no divórcio?","Pela extensão do trabalho: existência de acordo, complexidade do patrimônio, número de questões discutidas, necessidade de perícia e eventuais medidas urgentes. A OAB do DF publica tabela de honorários como parâmetro de referência da classe. O contrato deve ser escrito e delimitar com clareza o escopo do serviço e o que está incluído.")
+ ]
+},
 ]
