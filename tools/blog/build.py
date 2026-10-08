@@ -165,7 +165,7 @@ def build_post(p, prev_next):
 
     <aside class="post-cta">
       <p class="eyebrow mono">Seu caso é diferente de qualquer artigo</p>
-      <h3>Conte o que está acontecendo. A primeira conversa não tem custo.</h3>
+      <h3>Conte o que está acontecendo. Entenda os caminhos antes de decidir.</h3>
       <p>Este texto é informativo e não substitui a análise individual. Se a sua situação se parece com alguma das descritas aqui, o escritório consegue dizer, em uma conversa, qual caminho se aplica.</p>
       <div class="post-cta-acts">
         <a class="btn-wa" href="{wa(cta_msg)}" target="_blank" rel="noopener" onclick="return gtag_report_conversion();">
@@ -236,7 +236,7 @@ def build_index(posts):
 
 <section class="blog-cta"><div class="post-wrap">
   <h2>Nenhum artigo substitui a análise do seu caso</h2>
-  <p>Se o que você leu se parece com a sua situação, conte o que está acontecendo. A primeira conversa não tem custo.</p>
+  <p>Se o que você leu se parece com a sua situação, conte o que está acontecendo e entenda os caminhos possíveis.</p>
   <a class="btn-wa" href="{wa('Olá, vim pelo blog e gostaria de entender o meu caso')}" target="_blank" rel="noopener" onclick="return gtag_report_conversion();">
     <svg class="ico-wa" width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>Falar com o escritório
   </a>

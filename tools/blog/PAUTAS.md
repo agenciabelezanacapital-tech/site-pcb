@@ -74,8 +74,9 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 ## Regras editoriais
 
 - 900 a 1.400 palavras, português claro, sem juridiquês desnecessário.
-- Nunca prometer resultado, não citar valores de honorários, não usar a consulta
-  sem custo como chamariz. Conformidade com o Código de Ética da OAB e com o
+- Nunca prometer resultado, não citar valores de honorários, não oferecer gratuidade,
+  desconto ou consulta sem custo em lugar nenhum do texto (art. 3º, I do
+  Provimento 205). Também não publicar depoimento de cliente. Conformidade com o Código de Ética da OAB e com o
   Provimento 205.
 - Estrutura: `<p class="chamada">` de abertura, 4 a 6 `<h2>`, listas em
   `<ul class="lista">` ou `<ol class="passos">`, 3 perguntas de FAQ.

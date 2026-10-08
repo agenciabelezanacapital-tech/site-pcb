@@ -104,7 +104,7 @@ def page(a):
     <h1>{a['h1']}, <em>{a['h1_em']}</em></h1>
     <p class="lp-lead">{a['lead']}</p>
     <div class="lp-kicker">
-      <span>Primeira conversa sem custo</span><span>Resposta em até 1 hora no horário comercial</span><span>Presencial ou online</span>
+      <span>Resposta em até 1 hora no horário comercial</span><span>Presencial ou online</span>
     </div>
     <div class="lp-acts">
       {btn_wa(a['wa'], 'Falar com um advogado agora')}
@@ -146,7 +146,7 @@ def page(a):
     <div class="passo"><span>01</span><h3>Você conta o que está acontecendo</h3><p>Sem precisar saber o nome jurídico do problema nem chegar com documento nenhum.</p></div>
     <div class="passo"><span>02</span><h3>O escritório organiza o cenário</h3><p>Identificamos o assunto, a urgência e o que precisa ser analisado.</p></div>
     <div class="passo"><span>03</span><h3>Você entende os caminhos</h3><p>Alternativas, pontos de atenção, prazos e custos conforme o seu caso.</p></div>
-    <div class="passo"><span>04</span><h3>Você decide o próximo passo</h3><p>Só então, sabendo o que está em jogo. A primeira conversa não tem custo.</p></div>
+    <div class="passo"><span>04</span><h3>Você decide o próximo passo</h3><p>Só então, sabendo o que está em jogo e quais são os caminhos possíveis.</p></div>
   </div>
 </div></section>
 
@@ -170,7 +170,7 @@ def page(a):
   <div class="form-grid">
     <div class="form-txt">
       <p class="eyebrow mono">Três formas de começar</p>
-      <h2>Conte o que está acontecendo. <em>A primeira conversa não tem custo.</em></h2>
+      <h2>Conte o que está acontecendo. <em>Entenda os caminhos antes de decidir.</em></h2>
       <p>No horário comercial a resposta costuma sair em até uma hora. Nada do que você escrever aqui é compartilhado fora do escritório.</p>
       <div class="falar-vias">
         <a class="via via-wa" href="{wa(a['wa'])}" target="_blank" rel="noopener" onclick="return gtag_report_conversion();">
