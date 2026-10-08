@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="referrer" content="no-referrer">
+<title>Radar do Site PCB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Outfit:wght@200;300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout: coluna unica de 1080px, secoes numeradas separadas por fio fino.
+   Identidade do site do PCB Advogados: navy profundo, dourado e a trinca
+   Cormorant Garamond (titulos) / Outfit (texto) / IBM Plex Mono (rotulos).
+   Tema escuro unico, por decisao de marca. Todas as cores saem destes tokens. */
+:root{
+  color-scheme: dark;
+  --bg:#0C1B2A;
+  --surf:#0F2438;
+  --surf-2:#122A3F;
+  --border:#1C3A55;
+  --hair:#17304A;
+  --track:#1A3консolE;
+  --gold:#C9A96E;
+  --gold-light:#E2CA93;
+  --gold-soft:rgba(201,169,110,.12);
+  --cream:#F2F5F8;
+  --text:#C3D0DC;
+  --muted:#8296A8;
+  --dim:#64798C;
+  --faint:#4E6274;
+  --green:#5FBF7F;
+  --amber:#E0A83D;
+  --red:#D9534F;
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --sans:'Outfit',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background:var(--bg);
+  color:var(--cream);
+  font-family:var(--sans);
+  font-weight:300;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:24px}
+section{padding-block:60px;border-bottom:1px solid var(--border)}
+.label{font-family:var(--mono);font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);font-weight:500;margin-bottom:14px;display:block}
+h1{font-family:var(--serif);font-size:clamp(30px,5.4vw,52px);font-weight:500;line-height:1.1;letter-spacing:-.015em;text-wrap:balance}
+h2{font-family:var(--serif);font-size:clamp(22px,3.4vw,34px);font-weight:500;line-height:1.18;margin-bottom:16px;text-wrap:balance}
+h3{font-size:15px;font-weight:500;margin-bottom:8px;color:var(--cream)}
+p{color:var(--muted);font-size:15px;max-width:66ch}
+strong{color:var(--cream);font-weight:500}
+em{color:var(--gold-light);font-style:italic}
+a{color:var(--gold-light)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ABERTURA */
+.hero{
+  padding-block:60px 44px;
+  border-bottom:1px solid var(--border);
+  background:
+    radial-gradient(900px 380px at 14% -12%, rgba(201,169,110,.12), transparent 64%),
+    linear-gradient(180deg,#0E2132 0%, var(--bg) 100%);
+}
+.brandbar{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.brandbar .dot{width:7px;height:7px;background:var(--gold);border-radius:50%;flex:none}
+.brandbar span{font-family:var(--mono);font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)}
+.hero h1 em{color:var(--gold)}
+.hero .sub{margin-top:18px;font-size:16px;color:var(--text)}
+.metaline{margin-top:26px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.pill{font-family:var(--mono);border:1px solid var(--border);background:rgba(255,255,255,.02);border-radius:999px;padding:7px 15px;font-size:11px;color:var(--muted);letter-spacing:.06em}
+
+.filtros{display:flex;gap:8px;flex-wrap:wrap}
+.filtros button{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;
+  border:1px solid var(--border);background:rgba(255,255,255,.02);color:var(--muted);
+  border-radius:999px;padding:8px 17px;cursor:pointer;transition:border-color .15s,color .15s,background .15s;
+}
+.filtros button:hover{border-color:#2A4D6E;color:var(--text)}
+.filtros button[aria-pressed="true"]{border-color:rgba(201,169,110,.5);background:var(--gold-soft);color:var(--gold-light)}
+
+/* NUMEROS */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.kpi{background:var(--surf);border:1px solid var(--border);border-radius:14px;padding:20px;min-width:0}
+.kpi .n{font-family:var(--serif);font-size:38px;font-weight:500;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums}
+.kpi .t{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:11px}
+.kpi .hint{font-size:12.5px;color:var(--dim);margin-top:7px;line-height:1.5}
+
+/* BARRAS */
+.linha{display:grid;grid-template-columns:minmax(0,1fr) 72px;gap:14px;align-items:center;padding-block:10px}
+.linha+.linha{border-top:1px solid var(--hair)}
+.linha .nome{font-size:14px;color:var(--text);overflow-wrap:anywhere}
+.trilho{height:8px;background:var(--surf-2);border-radius:4px;overflow:hidden;margin-top:7px}
+.trilho i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:0 4px 4px 0}
+.linha .valor{text-align:right;font-family:var(--serif);font-size:22px;font-weight:500;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums}
+.linha .valor small{display:block;font-family:var(--mono);font-size:10px;color:var(--dim);font-weight:400;letter-spacing:.06em;margin-top:4px}
+
+/* FUNIL */
+.degrau{display:grid;grid-template-columns:minmax(0,1fr) 100px;gap:16px;align-items:center;padding-block:13px}
+.degrau+.degrau{border-top:1px solid var(--hair)}
+.degrau .et{font-family:var(--mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:500}
+.degrau .nome{font-size:15px;color:var(--text);margin-top:2px}
+.degrau .trilho{height:10px;border-radius:5px}
+.degrau .trilho i{border-radius:0 5px 5px 0}
+.degrau .lado{text-align:right}
+.degrau .lado .q{font-family:var(--serif);font-size:28px;font-weight:500;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums}
+.degrau .lado .pc{font-family:var(--mono);font-size:10px;color:var(--dim);letter-spacing:.06em;margin-top:5px}
+.perda{display:flex;align-items:center;gap:9px;margin-top:9px;font-size:12.5px;flex-wrap:wrap}
+.perda .seta{color:var(--faint);font-size:13px}
+.perda .txt{color:var(--dim)}
+
+/* ESTADO */
+.st{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:4px 11px;border-radius:999px;border:1px solid;white-space:nowrap}
+.st.ok{color:var(--green);border-color:rgba(95,191,127,.35);background:rgba(95,191,127,.08)}
+.st.warn{color:var(--amber);border-color:rgba(224,168,61,.35);background:rgba(224,168,61,.08)}
+.st.bad{color:var(--red);border-color:rgba(217,83,79,.35);background:rgba(217,83,79,.08)}
+
+/* CARTOES E TABELAS */
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.card{background:var(--surf);border:1px solid var(--border);border-radius:16px;padding:24px;min-width:0}
+.card .idx{font-family:var(--mono);font-size:10.5px;letter-spacing:.2em;color:var(--gold);font-weight:500;margin-bottom:12px;display:block}
+.card p{font-size:14px}
+.callout{border-left:2px solid var(--gold);background:linear-gradient(90deg,rgba(201,169,110,.08),transparent);padding:18px 22px;border-radius:0 12px 12px 0;margin-top:26px}
+.callout p{color:var(--text);max-width:none;font-size:15.5px}
+.rolagemtab{overflow-x:auto}
+table.tb{width:100%;border-collapse:collapse;margin-top:16px;min-width:460px}
+table.tb th{font-family:var(--mono);text-align:left;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:500;padding:10px 11px;border-bottom:1px solid var(--border);white-space:nowrap}
+table.tb td{padding:11px;border-bottom:1px solid var(--hair);font-size:13.5px;color:var(--muted);vertical-align:top}
+table.tb td:first-child{color:var(--cream);font-weight:400}
+table.tb td.num{text-align:right;color:var(--gold);font-weight:400;white-space:nowrap;font-variant-numeric:tabular-nums}
+.vazio{color:var(--faint);font-size:14px;padding-block:20px}
+
+.caminho{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.caminho .pg{border:1px solid var(--border);background:rgba(255,255,255,.02);border-radius:7px;padding:3px 9px;color:var(--text);font-size:12.5px}
+.caminho .arr{color:var(--faint)}
+
+.destaque{font-family:var(--serif);font-size:38px;font-weight:500;color:var(--gold);line-height:1;font-variant-numeric:tabular-nums}
+.destaque span{font-family:var(--sans);font-size:15px;color:var(--muted)}
+.destaque-t{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:9px}
+
+footer{padding-block:46px;text-align:center}
+footer .fdot{width:6px;height:6px;background:var(--gold);border-radius:50%;margin:0 auto 16px}
+footer p{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;max-width:none}
+footer p.small{font-family:var(--sans);text-transform:none;letter-spacing:0;font-size:12.5px;margin-top:10px;color:var(--faint)}
+
+@media (prefers-reduced-motion: reduce){*{transition:none !important;animation:none !important}}
+@media(max-width:860px){
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid2{grid-template-columns:minmax(0,1fr)}
+  section{padding-block:46px}
+}
+@media(max-width:460px){
+  .kpis{grid-template-columns:minmax(0,1fr)}
+  .linha,.degrau{grid-template-columns:minmax(0,1fr) 64px}
+}
+
+/* MAPA DE CALOR: a pagina inteira reduzida a um retangulo. Cada ponto e um
+   clique, posicionado pela porcentagem de largura e de altura da pagina real,
+   entao o desenho vale para qualquer tamanho de tela. */
+.mapa{position:relative;width:100%;height:560px;border:1px solid var(--border);border-radius:10px;
+  background:
+    linear-gradient(180deg,rgba(201,169,110,.05),transparent 22%),
+    repeating-linear-gradient(180deg,transparent 0 55px,var(--hair) 55px 56px),
+    var(--surf);
+  overflow:hidden}
+.mapa .pt{position:absolute;border-radius:50%;transform:translate(-50%,-50%);
+  background:radial-gradient(circle,rgba(226,202,147,.95) 0%,rgba(201,169,110,.55) 45%,rgba(201,169,110,0) 72%);
+  mix-blend-mode:screen;pointer-events:none}
+.mapa .topo,.mapa .base{position:absolute;left:12px;font-family:var(--mono);font-size:10px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--faint)}
+.mapa .topo{top:10px}
+.mapa .base{bottom:10px}
+.mapa .vaziomapa{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  color:var(--dim);font-size:13px;padding:24px;text-align:center}
+.legmapa{display:flex;align-items:center;gap:10px;margin-top:12px;font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.legmapa i{display:block;width:84px;height:6px;border-radius:3px;
+  background:linear-gradient(90deg,rgba(201,169,110,.18),var(--gold-light))}
+.comp{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brandbar"><div class="dot"></div><span>PCB Advogados · Brasília</span></div>
+    <h1>Radar do <em>Site</em></h1>
+    <p class="sub">Quem entra no site do escritório, por quais páginas anda, até que campo do formulário chega e por qual porta sai para falar com um advogado.</p>
+    <div class="metaline">
+      <div class="filtros" id="filtros">
+        <button type="button" data-p="1" aria-pressed="false">Hoje</button>
+        <button type="button" data-p="7" aria-pressed="true">7 dias</button>
+        <button type="button" data-p="30" aria-pressed="false">30 dias</button>
+        <button type="button" data-p="0" aria-pressed="false">Tudo</button>
+      </div>
+      <span class="pill" id="pillAtualizado">lendo</span>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <span class="label">01 · Visão geral</span>
+    <h2>O movimento do período</h2>
+    <div class="kpis">
+      <div class="kpi"><div class="n" id="kVisitas">—</div><div class="t">Visitas</div><div class="hint">Pessoas distintas que abriram alguma página.</div></div>
+      <div class="kpi"><div class="n" id="kPaginas">—</div><div class="t">Páginas vistas</div><div class="hint">Total de aberturas, somando repetição.</div></div>
+      <div class="kpi"><div class="n" id="kWhats">—</div><div class="t">Cliques de contato</div><div class="hint">WhatsApp, telefone e perfil do Google.</div></div>
+      <div class="kpi"><div class="n" id="kLeads">—</div><div class="t">Formulários enviados</div><div class="hint">Caso descrito e enviado ao escritório.</div></div>
+    </div>
+    <div class="callout" id="resumo"><p>Conectando ao radar. Se nada aparecer, é porque ainda não houve movimento desde que a medição entrou no ar.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">02 · Funil do formulário</span>
+    <h2>Até que campo a pessoa chega</h2>
+    <p>O formulário do site tem quatro campos numa tela só. Cada degrau conta visitas distintas que chegaram a tocar naquele campo, não cliques. A perda entre um degrau e o outro mostra onde a pessoa desiste de contar o caso.</p>
+    <div id="funil" style="margin-top:24px"><p class="vazio">Aguardando a primeira leitura.</p></div>
+    <div class="grid2" style="margin-top:28px">
+      <div class="card">
+        <span class="idx">ONDE PARA</span>
+        <h3>Campo em que a pessoa desistiu</h3>
+        <p>O último campo que ela tocou antes de sair sem enviar.</p>
+        <div id="travas"></div>
+      </div>
+      <div class="card">
+        <span class="idx">QUANTO TEMPO</span>
+        <h3>Tempo até desistir</h3>
+        <p>Segundos na página antes de sair com o formulário aberto e incompleto.</p>
+        <div id="tempos"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">03 · Portas de contato</span>
+    <h2>De onde a conversa realmente sai</h2>
+    <p>O site tem quatro portas: WhatsApp, telefone, formulário e o link para as avaliações no Google. Esta tabela diz qual botão, em qual página e em qual seção, está trazendo o contato. É o que define onde vale reforçar e onde o botão só ocupa espaço.</p>
+    <div id="portas"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">04 · Páginas</span>
+    <h2>O que as pessoas abrem</h2>
+    <p>A página inicial, as quatro páginas de área e os artigos do blog, por número de aberturas.</p>
+    <div id="paginas" style="margin-top:20px"><p class="vazio">Aguardando a primeira leitura.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">05 · Caminho dentro do site</span>
+    <h2>Por onde elas andam</h2>
+    <p>A sequência de páginas de cada visita, da entrada até a saída. Mostra se o blog está levando alguém para a página da área e para o contato, ou se cada artigo termina em beco sem saída.</p>
+    <div id="caminhos"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">06 · Aparelho e alcance</span>
+    <h2>Como elas chegam</h2>
+    <div class="grid2" style="margin-top:6px">
+      <div class="card">
+        <span class="idx">APARELHO</span>
+        <div id="aparelhos" style="margin-top:4px"></div>
+      </div>
+      <div class="card">
+        <span class="idx">ROLAGEM NA SAÍDA</span>
+        <h3>Até onde desceram na página</h3>
+        <p>Se a maioria sai nos primeiros 25 por cento, a prova social e o formulário não estão sendo vistos.</p>
+        <div id="rolagem" style="margin-top:10px"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">07 · Mapa de calor</span>
+    <h2>Onde a mão das pessoas encosta</h2>
+    <p>Cada clique da página vira um ponto. A posição é guardada em porcentagem da largura e da altura da página inteira, então o mesmo mapa serve para quem entrou pelo computador e para quem entrou pelo celular. O retângulo abaixo é a página mais clicada do período, do topo ao rodapé.</p>
+
+    <div style="margin-top:24px">
+      <div class="comp">
+        <h3 id="mapaPagina" style="margin:0">—</h3>
+        <span class="pill" id="mapaTotal"></span>
+      </div>
+      <div class="mapa" id="mapa">
+        <span class="topo">Topo</span><span class="base">Rodapé</span>
+        <div class="vaziomapa">Nenhum clique registrado neste período.</div>
+      </div>
+      <div class="legmapa"><span>Pouco clique</span><i></i><span>Muito clique</span></div>
+    </div>
+
+    <div class="grid2" style="margin-top:40px">
+      <div>
+        <h3>Em que parte da página</h3>
+        <p style="font-size:13px">A seção onde o clique caiu.</p>
+        <div id="cliqueSecoes" style="margin-top:14px"></div>
+      </div>
+      <div>
+        <h3>Em que elemento</h3>
+        <p style="font-size:13px">O texto do botão, link ou bloco clicado.</p>
+        <div id="cliqueElementos" style="margin-top:14px"></div>
+      </div>
+    </div>
+
+    <div style="margin-top:40px">
+      <h3>Profundidade do clique</h3>
+      <p style="font-size:13px">Em que altura da página as pessoas ainda clicam. Se tudo se concentra na primeira faixa, o resto da página não está sendo alcançado.</p>
+      <div id="cliqueFaixas" style="margin-top:14px"></div>
+    </div>
+
+    <div style="margin-top:36px">
+      <h3>Páginas com mais clique</h3>
+      <div id="cliquePaginas" style="margin-top:14px"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <span class="label">08 · Onde ver o resto</span>
+    <h2>O que este radar não cobre</h2>
+    <div class="grid2">
+      <div class="card">
+        <span class="idx">TRÁFEGO E ORIGEM</span>
+        <h3>Google Analytics 4</h3>
+        <p>Origem do tráfego, campanhas, geografia e os eventos clique_whatsapp, clique_telefone, rolagem e envio_formulario. Propriedade Site PCB Advogados, ID G-9NR1V3DK4W.</p>
+        <p style="margin-top:10px"><a href="https://analytics.google.com" target="_blank" rel="noopener">Abrir o GA4</a></p>
+      </div>
+      <div class="card">
+        <span class="idx">CUSTO POR CONTATO</span>
+        <h3>Google Ads</h3>
+        <p>Palavras buscadas, custo por clique e custo por conversão. Conta PCB Advogados Associados, campanha PESQUISA - SITE - SERVIÇOS.</p>
+        <p style="margin-top:10px"><a href="https://ads.google.com" target="_blank" rel="noopener">Abrir o Google Ads</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fdot"></div>
+    <p>Agência Beleza na Capital</p>
+    <p class="small">Os números vêm da planilha PCB Advogados Radar do Site, aba Funil.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  var ROTULO_ETAPA = ['Nome', 'Contato', 'Assunto', 'Descrição do caso'];
+  var periodoAtual = '7';
+  var dados = null;
+
+  function $(id) { return document.getElementById(id); }
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  function pct(a, b) { return b > 0 ? Math.round((a / b) * 100) : 0; }
+
+  function barras(itens, unidade) {
+    if (!itens || !itens.length) return '<p class="vazio">Nada registrado neste período.</p>';
+    var max = itens.reduce(function (m, i) { return Math.max(m, i.valor); }, 0) || 1;
+    return itens.map(function (i) {
+      return '<div class="linha">' +
+        '<div><div class="nome">' + esc(i.nome) + '</div>' +
+        '<div class="trilho"><i style="width:' + Math.max((i.valor / max) * 100, 2) + '%"></i></div></div>' +
+        '<div class="valor">' + i.valor +
+        (unidade ? '<small>' + esc(unidade) + '</small>' : '') + '</div></div>';
+    }).join('');
+  }
+
+  function tabela(cabecalhos, linhas) {
+    if (!linhas || !linhas.length) return '<p class="vazio">Nada registrado neste período.</p>';
+    return '<div class="rolagemtab"><table class="tb"><thead><tr>' +
+      cabecalhos.map(function (h) { return '<th>' + esc(h) + '</th>'; }).join('') +
+      '</tr></thead><tbody>' + linhas.map(function (l) {
+        return '<tr>' + l.map(function (c, idx) {
+          return '<td' + (idx === l.length - 1 ? ' class="num"' : '') + '>' + c + '</td>';
+        }).join('') + '</tr>';
+      }).join('') + '</tbody></table></div>';
+  }
+
+  function montarFunil(p) {
+    var f = p.funil || [];
+    var base = f.length ? f[0].q : 0;
+    var degraus = f.slice();
+    degraus.push({ etapa: 5, nome: 'Enviou o formulário', q: p.leads || 0, final: true });
+    if (!base && !p.leads) return '<p class="vazio">Ninguém tocou no formulário neste período.</p>';
+
+    var topo = Math.max(base, p.leads || 0) || 1;
+    return degraus.map(function (d, idx) {
+      var anterior = idx > 0 ? degraus[idx - 1].q : null;
+      var perdeu = anterior != null ? anterior - d.q : null;
+      var perdaPc = (anterior != null && anterior > 0) ? pct(perdeu, anterior) : 0;
+      var classe = perdaPc >= 50 ? 'bad' : perdaPc >= 25 ? 'warn' : 'ok';
+      var rotulo = perdaPc >= 50 ? 'Perda alta' : perdaPc >= 25 ? 'Perda média' : 'Perda baixa';
+      var nome = d.final ? d.nome : (ROTULO_ETAPA[idx] || d.nome);
+
+      var faixa = '';
+      if (perdeu != null && perdeu > 0) {
+        faixa = '<div class="perda"><span class="seta">&#8600;</span><span class="st ' + classe + '">' +
+          rotulo + '</span><span class="txt">' + perdeu + ' de ' + anterior +
+          ' desistiram aqui, ' + perdaPc + ' por cento</span></div>';
+      } else if (perdeu === 0 && anterior) {
+        faixa = '<div class="perda"><span class="seta">&#8600;</span><span class="st ok">Sem perda</span></div>';
+      }
+
+      return '<div class="degrau"><div>' +
+        '<span class="et">' + (d.final ? 'Fim' : 'Campo ' + (idx + 1)) + '</span>' +
+        '<div class="nome">' + esc(nome) + '</div>' +
+        '<div class="trilho"><i style="width:' + Math.max((d.q / topo) * 100, d.q ? 2 : 0) + '%"></i></div>' +
+        faixa + '</div>' +
+        '<div class="lado"><div class="q">' + d.q + '</div>' +
+        '<div class="pc">' + (base ? pct(d.q, base) + '% do topo' : '&nbsp;') + '</div></div></div>';
+    }).join('');
+  }
+
+  // O mapa reduz a pagina a um retangulo: left e a porcentagem da largura,
+  // top a porcentagem da altura. O tamanho do ponto cresce com a repeticao,
+  // e o blend screen soma os pontos vizinhos, que e o efeito de calor.
+  function montarMapa(p) {
+    var c = p.cliques || {};
+    var mapa = c.mapa || {};
+    var pontos = mapa.pontos || [];
+    var caixa = $('mapa');
+
+    $('mapaPagina').textContent = mapa.pagina || 'Nenhuma página com clique';
+    $('mapaTotal').textContent = pontos.length
+      ? (mapa.total || pontos.length) + (mapa.total === 1 ? ' clique' : ' cliques')
+      : '';
+
+    if (!pontos.length) {
+      caixa.innerHTML = '<span class="topo">Topo</span><span class="base">Rodapé</span>' +
+        '<div class="vaziomapa">Nenhum clique registrado neste período.</div>';
+      return;
+    }
+    var maior = pontos.reduce(function (m, q) { return Math.max(m, q.n || 1); }, 1);
+    caixa.innerHTML = '<span class="topo">Topo</span><span class="base">Rodapé</span>' +
+      pontos.map(function (q) {
+        var peso = (q.n || 1) / maior;
+        var tam = Math.round(26 + peso * 54);
+        var opac = (0.34 + peso * 0.5).toFixed(2);
+        return '<span class="pt" style="left:' + (q.x || 0) + '%;top:' + (q.y || 0) +
+          '%;width:' + tam + 'px;height:' + tam + 'px;opacity:' + opac + '"></span>';
+      }).join('');
+  }
+
+  function render() {
+    var p = (dados && dados.periodos && dados.periodos[periodoAtual]) || null;
+    if (!p) {
+      $('resumo').innerHTML = '<p>Ainda não há leitura gravada para este período. O radar está no ar e grava a partir da primeira visita.</p>';
+      ['kVisitas', 'kPaginas', 'kWhats', 'kLeads'].forEach(function (id) { $(id).textContent = '0'; });
+      $('funil').innerHTML = '<p class="vazio">Ninguém tocou no formulário neste período.</p>';
+      ['travas', 'tempos', 'portas', 'paginas', 'caminhos', 'aparelhos', 'rolagem',
+       'cliqueSecoes', 'cliqueElementos', 'cliqueFaixas', 'cliquePaginas'].forEach(function (id) {
+        $(id).innerHTML = '<p class="vazio">Nada registrado neste período.</p>';
+      });
+      montarMapa({});
+      return;
+    }
+
+    $('kVisitas').textContent = p.visitas || 0;
+    $('kPaginas').textContent = p.pageviews || 0;
+    $('kWhats').textContent = p.waCliques || 0;
+    $('kLeads').textContent = p.leads || 0;
+
+    var conversas = (p.waCliques || 0) + (p.leads || 0);
+    var frase;
+    if (!p.visitas) {
+      frase = 'Nenhuma visita neste período.';
+    } else if (!conversas) {
+      frase = '<strong>' + p.visitas + '</strong> ' + (p.visitas === 1 ? 'visita' : 'visitas') +
+        ' no período, e nenhuma delas virou contato.';
+    } else {
+      frase = '<strong>' + p.visitas + '</strong> ' + (p.visitas === 1 ? 'visita' : 'visitas') +
+        ' no período. <strong>' + conversas + '</strong> ' +
+        (conversas === 1 ? 'contato saiu' : 'contatos saíram') + ' daqui: <strong>' +
+        (p.leads || 0) + '</strong> pelo formulário, com o caso já descrito, e <strong>' +
+        (p.waCliques || 0) + '</strong> por botão direto de WhatsApp, telefone ou avaliações.';
+    }
+    $('resumo').innerHTML = '<p>' + frase + '</p>';
+
+    $('funil').innerHTML = montarFunil(p);
+    $('travas').innerHTML = (p.travas && p.travas.length)
+      ? barras(p.travas, 'vezes')
+      : '<p class="vazio">Nenhuma desistência com campo identificado.</p>';
+
+    if (p.tempos && p.tempos.n) {
+      $('tempos').innerHTML = '<div style="margin-top:12px">' +
+        '<div class="destaque">' + p.tempos.media + '<span> s</span></div>' +
+        '<div class="destaque-t">Média até desistir</div>' +
+        '<p style="margin-top:10px;font-size:13px">Mediana de ' + p.tempos.mediana + ' segundos, em ' +
+        p.tempos.n + (p.tempos.n === 1 ? ' desistência medida' : ' desistências medidas') + '.</p></div>';
+    } else {
+      $('tempos').innerHTML = '<p class="vazio">Nenhuma desistência medida.</p>';
+    }
+
+    $('portas').innerHTML = tabela(['Página', 'Seção', 'Botão', 'Cliques'],
+      (p.portas || []).map(function (x) {
+        return [esc(x.pagina), esc(x.secao), esc(x.botao), x.valor];
+      }));
+
+    $('paginas').innerHTML = barras(p.paginas, 'aberturas');
+
+    $('caminhos').innerHTML = tabela(['Caminho', 'Páginas', 'Visitas'],
+      (p.caminhos || []).map(function (c) {
+        return [
+          '<div class="caminho">' + (c.passos || []).map(function (x) {
+            return '<span class="pg">' + esc(x) + '</span>';
+          }).join('<span class="arr">&rsaquo;</span>') + '</div>',
+          (c.passos || []).length,
+          c.n
+        ];
+      }));
+
+    $('aparelhos').innerHTML = barras(p.aparelhos, 'visitas');
+    $('rolagem').innerHTML = barras(p.rolagem, 'saídas');
+
+    var cl = p.cliques || {};
+    montarMapa(p);
+    $('cliqueSecoes').innerHTML = barras(cl.secoes, 'cliques');
+    $('cliqueElementos').innerHTML = barras(cl.elementos, 'cliques');
+    $('cliqueFaixas').innerHTML = barras(cl.faixas, 'cliques');
+    $('cliquePaginas').innerHTML = barras(cl.paginas, 'cliques');
+  }
+
+  function marcarAtualizacao() {
+    if (!dados || !dados.atualizadoEm) { $('pillAtualizado').textContent = 'sem leitura'; return; }
+    var d = new Date(dados.atualizadoEm);
+    if (isNaN(d)) { $('pillAtualizado').textContent = 'sem leitura'; return; }
+    var dia = String(d.getDate()).padStart(2, '0') + '/' + String(d.getMonth() + 1).padStart(2, '0');
+    var hora = String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+    $('pillAtualizado').textContent = 'leitura de ' + dia + ' às ' + hora;
+  }
+
+  var filtros = $('filtros');
+  filtros.addEventListener('click', function (ev) {
+    var b = ev.target.closest('button');
+    if (!b) return;
+    periodoAtual = b.getAttribute('data-p');
+    Array.prototype.forEach.call(filtros.querySelectorAll('button'), function (x) {
+      x.setAttribute('aria-pressed', String(x === b));
+    });
+    render();
+  });
+
+  render();
+
+  // Versao publicada no Vercel: os numeros vem do arquivo dados.json, gravado
+  // uma vez por dia pela leitura automatica da planilha.
+  (function () {
+    fetch('dados.json?v=' + Date.now())
+      .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+      .then(function (j) { dados = j; marcarAtualizacao(); render(); })
+      .catch(function () { $('pillAtualizado').textContent = 'sem conexão'; });
+  })();
+})();
+</script>
+
+</body>
+</html>

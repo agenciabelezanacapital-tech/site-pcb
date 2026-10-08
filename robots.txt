@@ -36,3 +36,6 @@ User-agent: CCBot
 Allow: /
 
 Sitemap: https://www.pcbadvogadosassociados.com.br/sitemap.xml
+
+User-agent: *
+Disallow: /radar/
