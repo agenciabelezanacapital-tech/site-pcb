@@ -138,6 +138,10 @@ def build_post(p, prev_next):
 <title>{p['title_tag']}</title>
 <meta name="description" content="{p['description']}">
 <link rel="canonical" href="{url}">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="PCB Advogados">
 <meta property="og:locale" content="pt_BR">
@@ -211,6 +215,10 @@ def build_index(posts):
 <title>Blog | Direito de Família e Sucessões explicado · PCB Advogados</title>
 <meta name="description" content="Artigos sobre divórcio, inventário, guarda, pensão alimentícia e partilha de bens, escritos em linguagem clara por um escritório de Brasília.">
 <link rel="canonical" href="{BASE}/blog/">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{BASE}/blog/">
 <meta property="og:title" content="Blog | Direito de Família e Sucessões · PCB Advogados">
