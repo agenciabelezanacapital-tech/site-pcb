@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 2 | Quais bens entram na partilha segundo o regime de bens | partilha de bens divórcio | Divórcio e partilha |
 | 3 | Prazo para abrir inventário e o que acontece se passar | prazo abertura inventário | Inventário e herança |
 | 4 | Quanto tempo demora um inventário em Brasília | quanto tempo demora um inventário | Inventário e herança |
 | 5 | Herdeiro menor de idade: por que o inventário muda de via | inventário com herdeiro menor | Inventário e herança |
@@ -98,6 +97,7 @@ Nunca editar o HTML dentro de `/blog` à mão.
 
 ## Publicados
 
+- 2026-10-09 · Quais bens entram na partilha segundo o regime de bens
 - 2026-10-08 · Quanto custa um divórcio no Distrito Federal
 - 2026-10-07 · Divórcio em cartório: quando é possível e quanto tempo leva
 - 2026-10-06 · Divórcio consensual ou litigioso: qual caminho serve para o seu caso

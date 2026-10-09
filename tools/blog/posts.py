@@ -415,4 +415,60 @@ POSTS = [
   ("Como são definidos os honorários do advogado no divórcio?","Pela extensão do trabalho: existência de acordo, complexidade do patrimônio, número de questões discutidas, necessidade de perícia e eventuais medidas urgentes. A OAB do DF publica tabela de honorários como parâmetro de referência da classe. O contrato deve ser escrito e delimitar com clareza o escopo do serviço e o que está incluído.")
  ]
 },
+{
+ "slug":"quais-bens-entram-na-partilha-regime-de-bens",
+ "titulo":"Quais bens entram na partilha segundo o regime de bens",
+ "title_tag":"Quais bens entram na partilha no divórcio | PCB Advogados",
+ "description":"Veja o que entra e o que fica de fora da partilha em cada regime de bens: comunhão parcial, universal, separação e participação final nos aquestos.",
+ "keyword":"partilha de bens divórcio",
+ "area":"Divórcio e partilha",
+ "data":"2026-10-09",
+ "corpo":"""
+<p class="chamada">Na hora do divórcio, uma das primeiras dúvidas é o que será dividido. A resposta depende do regime de bens escolhido no casamento e, em muitos casos, da data em que cada bem foi adquirido e da forma como foi pago. Entender essa lógica evita surpresas e ajuda a organizar a documentação desde o começo.</p>
+
+<h2>O regime de bens é o ponto de partida</h2>
+<p>Regime de bens é o conjunto de regras que define o que pertence a cada cônjuge e o que pertence ao casal. Ele é escolhido antes do casamento, por pacto antenupcial feito em cartório. Quando não há pacto, vale o regime legal, que é a comunhão parcial. Na união estável acontece algo parecido: sem contrato escrito dizendo o contrário, aplicam-se as regras da comunhão parcial.</p>
+<p>Por isso, a primeira providência é confirmar qual regime vale para o seu caso. A certidão de casamento costuma indicá-lo, e o pacto antenupcial, se existir, está registrado no cartório de imóveis e no próprio cartório que o lavrou.</p>
+
+<h2>Comunhão parcial: o que se divide e o que fica de fora</h2>
+<p>Na comunhão parcial, em regra, entram na partilha os bens adquiridos de forma onerosa durante o casamento, mesmo que estejam no nome de apenas um dos cônjuges. Ficam de fora os bens particulares de cada um. A lei trata como particulares, entre outros:</p>
+<ul class="lista">
+  <li>os bens que cada cônjuge já tinha antes do casamento;</li>
+  <li>os bens recebidos por herança ou doação, durante o casamento, por um só dos cônjuges;</li>
+  <li>os bens adquiridos com valores obtidos pela venda de bens particulares;</li>
+  <li>as roupas, os objetos de uso pessoal e os instrumentos de profissão;</li>
+  <li>as pensões, os montepios e outras rendas de caráter pessoal, conforme a lei.</li>
+</ul>
+<p>Há casos intermediários que merecem atenção, como o bem comprado antes do casamento mas quitado depois dele. Nessas situações, costuma ser necessário separar o que foi pago com recursos próprios do que foi pago com o esforço comum, e a análise é feita caso a caso.</p>
+
+<h2>Comunhão universal: quase tudo é comum</h2>
+<p>Na comunhão universal, o patrimônio de ambos, presente e futuro, forma uma massa única, inclusive o que cada um levou para o casamento e o que recebeu por herança ou doação. A lei, porém, prevê exceções, e a mais conhecida é a dos bens gravados com cláusula de incomunicabilidade, como no caso de uma doação ou de um testamento que determine expressamente que o bem não se comunica. Esse regime é menos comum hoje, mas ainda aparece em casamentos antigos.</p>
+
+<h2>Separação de bens: cada um com o seu, com ressalvas</h2>
+<p>Na separação convencional, definida em pacto antenupcial, cada cônjuge mantém a titularidade e a administração do que adquire. Em tese, não há bens comuns a partilhar. Mesmo assim, é possível que existam bens em condomínio, quando o casal comprou algo em conjunto, e cada um fica com a parte que lhe cabe nesse bem.</p>
+<p>Existe ainda a separação obrigatória, imposta pela lei em hipóteses específicas, como no casamento de pessoas acima de determinada idade. Nesse caso, a jurisprudência dos tribunais superiores tem tratado a comunicação de bens adquiridos com esforço comum, e o entendimento deve ser verificado para o caso concreto, pois a matéria é objeto de debate.</p>
+
+<h2>Participação final nos aquestos</h2>
+<p>É um regime previsto no Código Civil, mas raro na prática. Durante o casamento, cada um administra o próprio patrimônio. No fim da relação, apura-se o que cada um acumulou depois do casamento e quem ficou com menos recebe uma compensação para equilibrar a diferença. Como sua aplicação é pouco frequente e exige apuração contábil, o pacto antenupcial que o adota costuma trazer regras próprias, que precisam ser lidas com cuidado.</p>
+
+<h2>Como organizar a análise da partilha</h2>
+<p>Seja qual for o regime, o caminho para saber o que entra na divisão costuma seguir uma ordem parecida:</p>
+<ol class="passos">
+  <li><strong>Confirmar o regime de bens</strong> na certidão de casamento, no pacto antenupcial ou no contrato de união estável.</li>
+  <li><strong>Listar todo o patrimônio</strong>: imóveis, veículos, contas, investimentos, previdência privada, participações em empresas e dívidas.</li>
+  <li><strong>Classificar cada item</strong> como comum ou particular, levando em conta a data e a origem dos recursos.</li>
+  <li><strong>Reunir os documentos</strong> que provam a origem: matrículas, escrituras, extratos, contratos e comprovantes de venda de bens anteriores.</li>
+  <li><strong>Definir a forma de dividir</strong>: vender e repartir o valor, atribuir o bem a um dos cônjuges com compensação ao outro, ou manter em condomínio por um período.</li>
+</ol>
+
+<h2>Quando as partes discordam</h2>
+<p>Se os cônjuges concordam sobre o que é comum e como dividir, a partilha pode ser formalizada em acordo. Se discordam, o juiz decide com base na prova apresentada, e por isso a documentação tem tanto peso. A avaliação dos bens, quando há divergência de valor, pode exigir perícia, e o resultado e o tempo variam conforme a complexidade do patrimônio e o andamento de cada processo.</p>
+<p>Vale lembrar que a lei permite decretar o divórcio e deixar a partilha para um momento posterior, o que pode ser útil quando o patrimônio ainda precisa ser levantado. Cada situação tem particularidades, e a orientação de um advogado de família ajuda a escolher a via adequada.</p>
+""",
+ "faq":[
+  ("Bem comprado no nome de só um dos cônjuges entra na partilha?","Depende do regime e da data da compra. Na comunhão parcial, o bem adquirido de forma onerosa durante o casamento costuma ser comum, mesmo estando apenas no nome de um dos cônjuges. Já o bem comprado antes do casamento ou com recursos particulares tende a ficar de fora. O que vale é a origem e a época da aquisição, e não só o nome que consta no registro."),
+  ("Herança recebida durante o casamento é dividida no divórcio?","Na comunhão parcial e na separação de bens, a herança recebida por um dos cônjuges é, em regra, bem particular e não entra na partilha. Na comunhão universal, a regra geral é diferente, salvo se o bem tiver cláusula de incomunicabilidade. Os rendimentos e as benfeitorias feitas com recursos do casal podem gerar discussão própria."),
+  ("Preciso ter pacto antenupcial para ter um regime diferente da comunhão parcial?","Sim, para o casamento. Quem quer comunhão universal, separação convencional ou participação final nos aquestos deve fazer o pacto antenupcial em cartório, por escritura pública, antes de casar. Sem ele, vale a comunhão parcial. Na união estável, o casal pode firmar contrato escrito com regras próprias de patrimônio.")
+ ]
+},
 ]
