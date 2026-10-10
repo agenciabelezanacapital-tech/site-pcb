@@ -11,7 +11,7 @@
 /* hero */
 .lp-hero{padding:64px 0 46px;background:radial-gradient(1100px 460px at 50% -12%,rgba(201,169,110,.10),transparent 62%)}
 .lp-hero .eyebrow{margin-bottom:18px;color:var(--gold)}
-.lp-hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(2.1rem,5.6vw,3.5rem);line-height:1.1;color:var(--cream);letter-spacing:-.012em;max-width:17ch}
+.lp-hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(1.85rem,5vw,3.1rem);line-height:1.1;color:var(--cream);letter-spacing:-.012em;max-width:17ch}
 .lp-hero h1 em{color:var(--gold);font-style:italic;display:block;font-size:.76em;margin-top:.18em;max-width:26ch}
 .lp-lead{margin-top:22px;font-size:1.04rem;line-height:1.78;color:var(--text);max-width:60ch}
 .lp-kicker{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px}

@@ -11,7 +11,7 @@
 /* cabecalho do artigo */
 .post{padding:54px 0 0}
 .post-area,.rel-area{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);border-radius:100px;padding:6px 13px;margin-bottom:20px}
-.post h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(2rem,5.4vw,3.1rem);line-height:1.12;color:var(--cream);letter-spacing:-.01em}
+.post h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(1.78rem,4.8vw,2.75rem);line-height:1.12;color:var(--cream);letter-spacing:-.01em}
 .post-meta{font-family:'IBM Plex Mono',monospace;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:18px;padding-bottom:26px;border-bottom:1px solid var(--line)}
 
 /* corpo */
@@ -60,7 +60,7 @@
 /* indice do blog */
 .blog-hero{padding:62px 0 34px}
 .blog-hero .eyebrow{margin-bottom:16px;color:var(--gold)}
-.blog-hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(2.1rem,6vw,3.4rem);line-height:1.12;color:var(--cream)}
+.blog-hero h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(1.85rem,5.3vw,3rem);line-height:1.12;color:var(--cream)}
 .blog-hero h1 em{color:var(--gold);font-style:italic}
 .blog-hero .lead{margin-top:20px;font-size:1.02rem;line-height:1.8;color:var(--text)}
 .blog-lista{padding:16px 0 20px}
