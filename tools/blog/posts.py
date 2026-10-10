@@ -471,4 +471,70 @@ POSTS = [
   ("Preciso ter pacto antenupcial para ter um regime diferente da comunhão parcial?","Sim, para o casamento. Quem quer comunhão universal, separação convencional ou participação final nos aquestos deve fazer o pacto antenupcial em cartório, por escritura pública, antes de casar. Sem ele, vale a comunhão parcial. Na união estável, o casal pode firmar contrato escrito com regras próprias de patrimônio.")
  ]
 },
+{
+ "slug":"prazo-para-abrir-inventario",
+ "titulo":"Prazo para abrir inventário e o que acontece se passar",
+ "title_tag":"Prazo para abrir inventário e o que acontece | PCB",
+ "description":"Veja o prazo legal para abrir o inventário, o que muda se ele passar e como regularizar a situação da família sem perder o direito à herança.",
+ "keyword":"prazo abertura inventário",
+ "area":"Inventário e herança",
+ "data":"2026-10-10",
+ "corpo":"""
+<p class="chamada">Quando alguém da família morre, o inventário precisa ser aberto dentro de um prazo definido em lei. Perder esse prazo não faz o direito à herança desaparecer, mas costuma trazer consequências financeiras e organizacionais. Entender o que a lei diz ajuda a agir com calma e sem pânico.</p>
+
+<h2>Qual é o prazo para abrir o inventário</h2>
+<p>O Código de Processo Civil determina que o inventário seja aberto em até dois meses a contar do falecimento, e que seja concluído nos doze meses seguintes à abertura. Esses prazos valem para o inventário judicial e também orientam a prática do inventário em cartório. O juiz pode prorrogá-los de ofício ou a requerimento, quando há motivo justificado.</p>
+<p>Na prática, muita gente descobre o prazo depois que ele já passou, porque nos primeiros dias a família está concentrada no luto, nas questões funerárias e na reunião de documentos. Isso é comum e tem solução, mas o ideal é procurar orientação cedo.</p>
+
+<h2>O que acontece se o prazo passar</h2>
+<p>O principal efeito prático do atraso está no imposto de transmissão. O ITCMD é cobrado pelo estado, e as leis estaduais costumam prever multa e acréscimos para quem não recolhe o tributo dentro de determinado período depois do falecimento. As regras, os percentuais e os prazos variam de estado para estado, então é preciso consultar a legislação do local onde o inventário tramita. No Distrito Federal, vale verificar a norma em vigor com a Secretaria de Economia ou com um advogado.</p>
+<p>Além do imposto, o atraso pode gerar outros efeitos:</p>
+<ul class="lista">
+  <li>os bens ficam em nome de quem faleceu, o que impede vender, doar ou financiar com tranquilidade;</li>
+  <li>contas, aluguéis e despesas do patrimônio continuam correndo sem uma pessoa formalmente responsável;</li>
+  <li>documentos e provas podem se perder com o tempo, e a localização de herdeiros e bens fica mais difícil;</li>
+  <li>conflitos na família tendem a crescer quando ninguém administra oficialmente os bens.</li>
+</ul>
+
+<h2>O direito à herança não prescreve com o atraso</h2>
+<p>É importante separar duas coisas. O prazo de abertura do inventário é uma regra de organização do procedimento. Já o direito dos herdeiros à herança existe desde a morte, pelo princípio da saisine, segundo o qual a propriedade e a posse dos bens se transmitem aos herdeiros no momento do falecimento. Por isso, abrir o inventário depois dos dois meses continua sendo possível. O que muda são os acréscimos fiscais que o estado pode aplicar e a necessidade de explicar o atraso quando o juiz perguntar.</p>
+<p>Existe também a ação de petição de herança, que serve para quem foi deixado de fora e quer reivindicar sua parte. Ela tem prazo próprio e é outro assunto, que depende do caso concreto.</p>
+
+<h2>Quem pode pedir a abertura</h2>
+<p>A lei indica quem tem legitimidade para requerer o inventário, e a ordem costuma começar por quem está na posse e na administração dos bens. Podem pedir, entre outros:</p>
+<ul class="lista">
+  <li>o cônjuge ou companheiro sobrevivente;</li>
+  <li>os herdeiros e legatários;</li>
+  <li>o testamenteiro, quando há testamento;</li>
+  <li>o credor do falecido, em certas situações;</li>
+  <li>o Ministério Público, quando há herdeiro incapaz.</li>
+</ul>
+<p>Se ninguém toma a iniciativa, o juiz pode abrir o inventário de ofício. Ou seja, a omissão da família não impede o processo, mas tira dela o controle sobre o ritmo e sobre as escolhas.</p>
+
+<h2>Inventário em cartório ou na Justiça: o prazo muda?</h2>
+<p>Os dois caminhos partem da mesma lógica de prazos, mas a execução é diferente. No cartório, o procedimento depende de acordo entre todos os herdeiros, todos maiores e capazes, e de ausência de testamento (salvo hipóteses admitidas pela jurisprudência e pelas normas locais). Na Justiça, o juiz conduz o processo e pode ajustar prazos diante de justificativa razoável. Em ambos, a falta de documentos é a causa mais comum de demora, e não o prazo em si. Por isso, preparar a papelada antes de procurar o cartório ou o advogado costuma poupar semanas, embora o tempo total varie conforme o caso.</p>
+
+<h2>Como se organizar para não perder tempo</h2>
+<p>Mesmo que o prazo de dois meses já tenha passado, vale seguir uma sequência simples e começar o quanto antes:</p>
+<ol class="passos">
+  <li><strong>Reunir a certidão de óbito</strong> e os documentos pessoais do falecido, do cônjuge e dos herdeiros.</li>
+  <li><strong>Levantar os bens e as dívidas</strong>: imóveis, veículos, contas, investimentos, empresas, e também obrigações pendentes.</li>
+  <li><strong>Verificar se há testamento</strong>, o que muda o caminho do procedimento.</li>
+  <li><strong>Confirmar quem são os herdeiros</strong> e se algum deles é menor ou incapaz, o que exige inventário judicial.</li>
+  <li><strong>Escolher a via adequada</strong>: cartório, quando todos são maiores, capazes e estão de acordo e não há testamento, ou o Judiciário nos demais casos.</li>
+  <li><strong>Acompanhar o imposto</strong>, consultando as regras estaduais sobre prazos, multa e forma de pagamento.</li>
+</ol>
+
+<h2>Erros comuns de quem deixa o prazo correr</h2>
+<p>Alguns equívocos aparecem com frequência: achar que é preciso esperar o fim do luto para começar a reunir documentos, que o imóvel pode ser vendido apenas com a certidão de óbito, ou que a divisão informal entre os herdeiros substitui o inventário. Nenhuma dessas ideias resolve a situação perante o registro de imóveis, o banco ou o fisco. A divisão feita por fora pode ser útil como entendimento entre a família, mas precisa ser formalizada para ter efeito legal.</p>
+
+<h2>Quando vale pedir orientação logo</h2>
+<p>Se a família já passou do prazo, tem imóveis em estados diferentes, empresa em nome do falecido ou discordâncias entre herdeiros, a orientação de um advogado de família e sucessões ajuda a avaliar o custo do atraso e a melhor forma de regularizar. Cada situação tem particularidades, e o que vale para um inventário pode não valer para outro. O objetivo é reduzir riscos e dar clareza sobre os próximos passos.</p>
+""",
+ "faq":[
+  ("O inventário pode ser aberto depois de dois meses da morte?","Sim. O prazo legal de dois meses é uma regra de organização do procedimento, e o inventário continua podendo ser aberto depois dele. O que costuma mudar são os acréscimos de imposto previstos na lei do estado e a necessidade de justificar o atraso. Por isso, quanto antes a família procurar orientação, menores tendem a ser os efeitos."),
+  ("A multa por atraso no inventário é a mesma em todos os estados?","Não. A multa e os prazos do ITCMD são definidos por lei estadual, então variam conforme o local onde o inventário é processado. É necessário consultar a legislação do estado ou do Distrito Federal, e o ideal é verificar a norma vigente no momento da abertura, porque ela pode ser alterada."),
+  ("O herdeiro perde a herança se ninguém abrir o inventário no prazo?","Não. O direito à herança nasce com a morte e não desaparece pelo atraso na abertura do inventário. O risco está nos acréscimos fiscais, na dificuldade de dispor dos bens e nos conflitos que a demora pode causar. Se ninguém agir, o juiz também pode determinar a abertura de ofício.")
+ ]
+},
 ]

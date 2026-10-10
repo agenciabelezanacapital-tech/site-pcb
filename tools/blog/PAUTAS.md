@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 3 | Prazo para abrir inventário e o que acontece se passar | prazo abertura inventário | Inventário e herança |
 | 4 | Quanto tempo demora um inventário em Brasília | quanto tempo demora um inventário | Inventário e herança |
 | 5 | Herdeiro menor de idade: por que o inventário muda de via | inventário com herdeiro menor | Inventário e herança |
 | 6 | Como conseguir a guarda do filho: o que o juiz analisa | como conseguir a guarda do filho | Guarda e convivência |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-10-06 · Como é calculada a pensão alimentícia (e por que não existe percentual fixo)
 - 2026-10-06 · Pai não paga pensão: os caminhos de cobrança e como funciona a prisão civil
 - 2026-10-06 · Dissolução de união estável: prova da relação, partilha e pensão
+- 2026-10-10 · Prazo para abrir inventário e o que acontece se passar
