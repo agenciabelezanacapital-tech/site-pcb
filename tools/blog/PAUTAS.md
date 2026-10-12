@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 5 | Herdeiro menor de idade: por que o inventário muda de via | inventário com herdeiro menor | Inventário e herança |
 | 6 | Como conseguir a guarda do filho: o que o juiz analisa | como conseguir a guarda do filho | Guarda e convivência |
 | 7 | Guarda unilateral: requisitos e quando ela é concedida | guarda unilateral requisitos | Guarda e convivência |
 | 8 | Alienação parental: como identificar e o que fazer | alienação parental advogado | Guarda e convivência |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-10-06 · Dissolução de união estável: prova da relação, partilha e pensão
 - 2026-10-10 · Prazo para abrir inventário e o que acontece se passar
 - 2026-10-11 · Quanto tempo demora um inventário em Brasília
+- 2026-10-12 · Herdeiro menor de idade: por que o inventário muda de via
