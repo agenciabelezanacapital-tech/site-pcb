@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 10 | Até que idade o filho tem direito a pensão | até quando pagar pensão | Pensão alimentícia |
 | 11 | Testamento e planejamento sucessório: organizar em vida o que a família herda | como fazer testamento | Inventário e herança |
 | 12 | Preciso da autorização do meu cônjuge para me divorciar? | divórcio sem o consentimento do outro | Divórcio e partilha |
 | 13 | Divórcio judicial e extrajudicial: a diferença que muda prazo e custo | diferença divórcio judicial extrajudicial | Divórcio e partilha |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-10-14 · Guarda unilateral: requisitos e quando ela é concedida
 - 2026-10-15 · Alienação parental: como identificar e o que fazer
 - 2026-10-16 · Revisão de pensão alimentícia: quando pedir aumento ou redução
+- 2026-10-17 · Até que idade o filho tem direito a pensão
