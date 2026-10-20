@@ -14,6 +14,48 @@ AREA_ANCHOR = {
  "Pensão alimentícia":"area-pensao",
 }
 
+# Cada area do blog aponta para a landing page correspondente.
+AREA_LP = {
+ "Divórcio e partilha":("advogado-divorcio-brasilia","Divórcio e partilha de bens"),
+ "Inventário e herança":("advogado-inventario-brasilia","Inventário e herança"),
+ "Guarda e convivência":("advogado-guarda-brasilia","Guarda e convivência"),
+ "Pensão alimentícia":("advogado-pensao-alimenticia-brasilia","Pensão alimentícia"),
+ "Direito Médico e da Saúde":("advogado-direito-medico-brasilia","Direito médico e da saúde"),
+ "Direito do Consumidor":("advogado-direito-consumidor-brasilia","Direito do consumidor"),
+ "Contratos e direito civil":("advogado-contratos-brasilia","Contratos e direito civil"),
+}
+
+def cta_meio(p, up):
+    """Bloco curto no meio do artigo, antes do h2 mais proximo da metade.
+    So entra em texto longo, para nao poluir artigo curto."""
+    corpo = p["corpo"]
+    if len(corpo) < 4000:
+        return corpo
+    alvos = [m.start() for m in re.finditer(r"<h2", corpo)]
+    if not alvos:
+        return corpo
+    meio = len(corpo) // 2
+    pos = min(alvos, key=lambda x: abs(x - meio))
+    if pos < 800 or pos > len(corpo) - 800:
+        return corpo
+    lp = AREA_LP.get(p["area"])
+    link = ""
+    if lp:
+        link = f'<a class="mid-link" href="{up}{lp[0]}/">Ver a página de {lp[1].lower()}</a>'
+    msg = f'Olá, li o artigo sobre {p["titulo"].split(":")[0].lower()} e gostaria de entender o meu caso'
+    bloco = f'''
+<aside class="post-mid">
+  <p>Seu caso tem detalhes que nenhum artigo cobre. O escritório consegue dizer, numa conversa, qual caminho se aplica.</p>
+  <div class="post-mid-acts">
+    <a class="btn-wa" href="{wa(msg)}" target="_blank" rel="noopener" onclick="return gtag_report_conversion();">
+      <svg class="ico-wa" width="18" height="18" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>Falar sobre o meu caso
+    </a>{link}
+  </div>
+</aside>
+
+'''
+    return corpo[:pos] + bloco + corpo[pos:]
+
 def wa(txt):
     import urllib.parse
     return WA + "?text=" + urllib.parse.quote(txt)
@@ -129,6 +171,9 @@ def build_post(p, prev_next):
       f'<a class="rel-card" href="../{o["slug"]}/"><span class="rel-area">{o["area"]}</span><b>{o["titulo"]}</b></a>'
       for o in prev_next)
     anchor = AREA_ANCHOR.get(p["area"],"areas")
+    lp = AREA_LP.get(p["area"])
+    lp_href = f'{up}{lp[0]}/' if lp else f'{up}index.html#falar'
+    lp_label = f'Ver a página de {lp[1].lower()}' if lp else 'Prefiro escrever'
     cta_msg = f'Olá, li o artigo sobre {p["titulo"].split(":")[0].lower()} e gostaria de entender o meu caso'
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
@@ -164,7 +209,7 @@ def build_post(p, prev_next):
     <p class="post-meta"><time datetime="{p['data']}">{br_date(p['data'])}</time> · PCB Advogados · Brasília/DF</p>
 
     <div class="post-body">
-{p['corpo']}
+{cta_meio(p, up)}
     </div>
 
     <aside class="post-cta">
@@ -175,7 +220,7 @@ def build_post(p, prev_next):
         <a class="btn-wa" href="{wa(cta_msg)}" target="_blank" rel="noopener" onclick="return gtag_report_conversion();">
           <svg class="ico-wa" width="19" height="19" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>Falar sobre o meu caso
         </a>
-        <a class="btn-ghost" href="{up}index.html#falar">Prefiro escrever</a>
+        <a class="btn-ghost" href="{lp_href}">{lp_label}</a>
       </div>
     </aside>
 
@@ -184,7 +229,7 @@ def build_post(p, prev_next):
     </div>
 
     <div class="post-area-link">
-      <p>Veja como o escritório atua nessa frente: <a href="{up}index.html#{anchor}">{p['area']}</a></p>
+      <p>Veja como o escritório atua nessa frente: <a href="{lp_href}">{lp_label}</a> · <a href="{up}index.html#{anchor}">Todas as áreas</a></p>
     </div>
 
     <section class="relacionados">
@@ -276,7 +321,9 @@ def build_feed(posts):
 """
 
 LPS = ["advogado-divorcio-brasilia","advogado-inventario-brasilia",
-       "advogado-guarda-brasilia","advogado-pensao-alimenticia-brasilia"]
+       "advogado-guarda-brasilia","advogado-pensao-alimenticia-brasilia",
+       "advogado-direito-medico-brasilia","advogado-direito-consumidor-brasilia",
+       "advogado-contratos-brasilia"]
 
 def build_sitemap(posts):
     urls = [(BASE+"/", "monthly", "1.0", None), (BASE+"/blog/", "weekly", "0.8", None)]
@@ -294,7 +341,9 @@ def main():
     blog = ROOT / "blog"
     blog.mkdir(exist_ok=True)
     for i, p in enumerate(posts):
-        rel = [posts[(i+1) % len(posts)], posts[(i+2) % len(posts)]]
+        mesma = [o for o in posts if o["area"] == p["area"] and o["slug"] != p["slug"]]
+        outras = [o for o in posts if o["area"] != p["area"]]
+        rel = (mesma + outras)[:3]
         d = blog / p["slug"]; d.mkdir(exist_ok=True)
         (d / "index.html").write_text(build_post(p, rel), encoding="utf-8")
     (blog / "index.html").write_text(build_index(posts), encoding="utf-8")

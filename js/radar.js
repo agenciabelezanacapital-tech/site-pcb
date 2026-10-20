@@ -205,11 +205,13 @@
   // ---------- 5) funil do formulario ----------
   // O formulario do PCB tem um passo so na tela, mas quatro campos. O funil
   // util e saber ate qual campo a pessoa chegou antes de desistir.
+  // Ordem igual a da tela: desde 19/10 a descricao vem antes do assunto, e
+  // nas landing pages o assunto e campo oculto (nao recebe foco, nao conta).
   var ETAPAS = [
     { id: 'f-nome', n: 1, nome: 'Nome' },
     { id: 'f-contato', n: 2, nome: 'Contato' },
-    { id: 'f-assunto', n: 3, nome: 'Assunto' },
-    { id: 'f-caso', n: 4, nome: 'Descricao do caso' }
+    { id: 'f-caso', n: 3, nome: 'Descricao do caso' },
+    { id: 'f-assunto', n: 4, nome: 'Assunto' }
   ];
   var etapaMax = 0, etapaNomeMax = '', campoAtual = '', enviouForm = false;
   var etapasVistas = {};
