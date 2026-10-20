@@ -299,3 +299,4 @@ a.area-sec .area-link{margin-top:12px}
 .entende b{color:var(--cream);font-weight:500}
 @media(max-width:760px){.entende{grid-template-columns:1fr}}
 @media(max-width:640px){.hero-prova{font-size:.84rem;padding:8px 13px}}
+.hero-prova .estrelas svg{width:15px;height:15px}
