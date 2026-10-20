@@ -80,3 +80,17 @@
   .post-cta{padding:26px 22px}
   .post-cta-acts .btn-wa,.post-cta-acts .btn-ghost{width:100%;justify-content:center}
 }
+
+/* ===== bloco de contato no meio do artigo (19/10) ===== */
+.post-mid{margin:36px 0;padding:22px 24px;border-left:2px solid var(--gold);background:var(--gold-dim);border-radius:0 12px 12px 0}
+.post-mid p{margin:0 0 16px;color:var(--cream);font-size:.96rem;line-height:1.6}
+.post-mid-acts{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+.post-mid .btn-wa{font-size:.9rem;padding:13px 22px}
+.mid-link{font-family:'IBM Plex Mono',monospace;font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line-strong);padding-bottom:3px}
+.mid-link:hover{color:var(--gold-bright)}
+@media(max-width:560px){
+  .post-mid{padding:20px 18px}
+  .post-mid-acts{flex-direction:column;align-items:stretch}
+  .post-mid .btn-wa{justify-content:center}
+  .mid-link{text-align:center}
+}

@@ -33,6 +33,38 @@ WA_SVG = """<svg width="0" height="0" style="position:absolute" aria-hidden="tru
 ICO_TEL = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1.9.4 1.8.7 2.7a2 2 0 01-.5 2.1L8.1 9.9a16 16 0 006 6l1.4-1.2a2 2 0 012.1-.5c.9.3 1.8.6 2.7.7a2 2 0 011.7 2z"/></svg>'
 STAR = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"/></svg>'
 
+SOCIOS = {
+ "leonardo": {
+   "nome":"Leonardo Cidade Castello Branco", "oab":"OAB/DF 46809",
+   "foto":"leonardo.jpg", "pos":"center 24%",
+   "bio":"Conduz as causas de Direito de Família e Sucessões. Especialização na área pelo IBMEC e formação em Comunicação Social.",
+ },
+ "rinaldo": {
+   "nome":"Rinaldo Pimentel", "oab":"OAB/DF 84596",
+   "foto":"rinaldo.jpg", "pos":"center 17%",
+   "bio":"Conduz as causas de Direito Civil, do Consumidor, Médico e da Saúde, contratos e Direito Militar. Mestre em Direito Constitucional pelo IDP e membro das Comissões de Direito Civil, Militar e do Consumidor da OAB/DF.",
+ },
+}
+
+def bloco_socio(chave):
+    """Cartao do socio responsavel pela area. A segunda foto (estacao de
+    trabalho) so entra se o arquivo existir em images/, para a pagina nao
+    quebrar enquanto as fotos nao chegam."""
+    sc = SOCIOS[chave]
+    extra = ""
+    nome_extra = f"estacao-{chave}.jpg"
+    if (ROOT / "images" / nome_extra).exists():
+        extra = (f'<img class="socio-estacao" src="../images/{nome_extra}" '
+                 f'alt="{sc["nome"]} no escritório, em Brasília" width="900" height="600" loading="lazy">')
+    return f'''<div class="socio-min">
+      <img src="../images/{sc["foto"]}" alt="{sc["nome"]}" width="480" height="640" style="object-position:{sc["pos"]}" loading="lazy">
+      <div>
+        <h3>{sc["nome"]}</h3>
+        <p class="oab">{sc["oab"]}</p>
+        <p>{sc["bio"]}</p>
+      </div>
+    </div>{extra}'''
+
 def btn_wa(texto, label, cls="btn-wa"):
     return (f'<a class="{cls}" href="{wa(texto)}" target="_blank" rel="noopener" '
             f'onclick="return gtag_report_conversion();">'
@@ -41,16 +73,14 @@ def btn_wa(texto, label, cls="btn-wa"):
 def page(a):
     url = f"{BASE}/{a['slug']}/"
     sits = "".join(f'<div class="sit"><h3>{t}</h3><p>{d}</p></div>' for t, d in a["situacoes"])
-    objs = "".join(f'<div class="obj"><h3>{q}</h3><p>{r}</p></div>' for q, r in a["objecoes"])
+    objs = "".join(f'<div class="faq-item"><button class="faq-q">{q} <span class="plus">+</span></button><div class="faq-a"><p>{r}</p></div></div>' for q, r in a["objecoes"])
     faqs = "".join(f'<div class="faq-item"><button class="faq-q">{q} <span class="plus">+</span></button><div class="faq-a"><p>{r}</p></div></div>' for q, r in a["faq"])
-    opts = "".join(f'<option value="{x}"{" selected" if x == a["assunto"] else ""}>{x}</option>'
-                   for x in ["Divórcio e partilha","Inventário e herança","Guarda e convivência","Pensão alimentícia","Outro assunto"])
     ld = {"@context":"https://schema.org","@graph":[
       {"@type":"LegalService","@id":url+"#servico","name":f"PCB Advogados — {a['nome']} em Brasília",
        "description":a["description"],"url":url,"telephone":"+5561991193026",
        "areaServed":{"@type":"City","name":"Brasília"},
        "parentOrganization":{"@type":"Organization","name":"Pimentel e Castello Branco Advogados Associados","url":BASE+"/"},
-       "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"51"}},
+       "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"63"}},
       {"@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Início","item":BASE+"/"},
         {"@type":"ListItem","position":2,"name":a["nome"],"item":url}]},
@@ -107,25 +137,19 @@ def page(a):
     <p class="eyebrow mono">{a['kicker']}</p>
     <h1>{a['h1']}, <em>{a['h1_em']}</em></h1>
     <p class="lp-lead">{a['lead']}</p>
-    <div class="lp-kicker">
-      <span>Resposta em até 1 hora no horário comercial</span><span>Presencial ou online</span>
-    </div>
+    <a class="hero-prova" href="https://maps.google.com/maps?cid=1482512693113634362" target="_blank" rel="noopener" data-evt="perfil-google">
+      <span class="estrelas" aria-hidden="true">{STAR*5}</span>
+      <span><b>5,0</b> · 63 avaliações no Google</span>
+    </a>
     <div class="lp-acts">
       {btn_wa(a['wa'], 'Falar com um advogado agora')}
       <a href="#formulario" class="btn-ghost">Prefiro escrever meu caso</a>
     </div>
-    <div class="lp-nota">12 anos de atuação em Direito de Família e Sucessões · OAB/DF 46809 e 84596</div>
+    <div class="lp-kicker">
+      <span>Resposta em até 1 hora no horário comercial</span><span>Presencial ou online</span><span>12 anos de atuação</span>
+    </div>
   </div>
 </section>
-
-<!-- PROVA -->
-<section class="lp-prova"><div class="lp-wrap">
-  <div class="lp-prova-in">
-    <div class="estrelas" aria-hidden="true">{STAR*5}</div>
-    <div><b>5,0 de 5</b><span>51 avaliações de clientes no Google</span></div>
-    <a href="https://maps.google.com/maps?cid=1482512693113634362" target="_blank" rel="noopener" data-evt="perfil-google">Ver no Google</a>
-  </div>
-</div></section>
 
 <!-- SITUACOES -->
 <section class="lp-sits"><div class="lp-wrap">
@@ -140,7 +164,7 @@ def page(a):
 <!-- OBJECOES -->
 <section class="lp-objs"><div class="lp-wrap">
   <h2>As dúvidas que mais travam o primeiro contato</h2>
-  <div class="obj-grid">{objs}</div>
+  <div class="faq-grid">{objs}</div>
 </div></section>
 
 <!-- COMO FUNCIONA -->
@@ -157,15 +181,8 @@ def page(a):
 <!-- SOCIOS -->
 <section class="lp-socios"><div class="lp-wrap">
   <h2>Quem vai cuidar do seu caso</h2>
-  <div class="socios-min">
-    <div class="socio-min">
-      <img src="../images/leonardo.jpg" alt="Leonardo Cidade Castello Branco" width="480" height="640" style="object-position:center 24%" loading="lazy">
-      <div><h3>Leonardo Cidade Castello Branco</h3><p class="oab">OAB/DF 46809</p><p>Especialista em Direito de Família e Sucessões pelo IBMEC. Formado também em Comunicação Social.</p></div>
-    </div>
-    <div class="socio-min">
-      <img src="../images/rinaldo.jpg" alt="Rinaldo Pimentel" width="480" height="640" style="object-position:center 17%" loading="lazy">
-      <div><h3>Rinaldo Pimentel</h3><p class="oab">OAB/DF 84596</p><p>Mestre em Direito Constitucional pelo IDP, membro das Comissões de Direito Civil, Militar e do Consumidor da OAB/DF.</p></div>
-    </div>
+  <div class="socios-min um-socio">
+    {bloco_socio(a['socio'])}
   </div>
 </div></section>
 
@@ -195,9 +212,8 @@ def page(a):
       <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos te chamar">
       <label for="f-contato">WhatsApp ou telefone</label>
       <input id="f-contato" name="contato" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(61) 90000-0000">
-      <label for="f-assunto">Qual é o assunto</label>
-      <select id="f-assunto" name="assunto">{opts}</select>
-      <label for="f-caso">Em poucas palavras, o que está acontecendo</label>
+      <input type="hidden" id="f-assunto" name="assunto" value="{a['assunto']}">
+      <label for="f-caso">Em poucas palavras, o que está acontecendo <span class="opc">(opcional)</span></label>
       <textarea id="f-caso" name="caso" rows="3" placeholder="Não precisa saber o nome jurídico do problema"></textarea>
       <input type="text" name="empresa" id="f-empresa" tabindex="-1" autocomplete="off" aria-hidden="true">
       <button type="submit" class="form-btn">Enviar para o escritório</button>
@@ -210,6 +226,10 @@ def page(a):
 <section class="lp-faq"><div class="lp-wrap">
   <h2>Perguntas frequentes sobre {a['nome'].lower()}</h2>
   <div class="faq-grid">{faqs}</div>
+  <div class="lp-cta-fim">
+    <p>Ainda com dúvida sobre o seu caso?</p>
+    {btn_wa(a['wa'], 'Falar com um advogado agora')}
+  </div>
 </div></section>
 
 <footer class="lp-footer">
