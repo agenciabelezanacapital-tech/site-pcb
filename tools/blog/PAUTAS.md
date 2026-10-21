@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 14 | Divórcio com os cônjuges em cidades ou países diferentes | divórcio morando em cidades diferentes | Divórcio e partilha |
 | 15 | As dívidas do casal também são divididas no divórcio? | dívidas são divididas no divórcio | Divórcio e partilha |
 | 16 | Dá para vender um bem antes de concluir a partilha? | vender bem antes da partilha | Divórcio e partilha |
 | 17 | Imóvel financiado no divórcio: quem fica com o bem e com a dívida | partilha de imóvel financiado | Divórcio e partilha |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-10-18 · Testamento e planejamento sucessório: organizar em vida o que a família herda
 - 2026-10-19 · Preciso da autorização do meu cônjuge para me divorciar?
 - 2026-10-20 · Divórcio judicial e extrajudicial: a diferença que muda prazo e custo
+- 2026-10-21 · Divórcio com os cônjuges em cidades ou países diferentes
