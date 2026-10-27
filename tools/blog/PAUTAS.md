@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 19 | FGTS, previdência e participação nos lucros entram na partilha? | fgts entra na partilha de bens | Divórcio e partilha |
 | 20 | Empresa no divórcio: o que acontece com as cotas da sociedade | partilha de empresa divórcio | Divórcio e partilha |
 | 21 | Voltar a usar o nome de solteiro depois do divórcio | voltar nome de solteiro divórcio | Divórcio e partilha |
 | 22 | Separação de fato: a partir de quando os bens deixam de se comunicar | separação de fato partilha de bens | Divórcio e partilha |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-10-23 · Dá para vender um bem antes de concluir a partilha?
 - 2026-10-24 · Imóvel financiado no divórcio: quem fica com o bem e com a dívida
 - 2026-10-25 · Comunhão parcial, universal e separação total: o que muda na prática
+- 2026-10-27 · FGTS, previdência e participação nos lucros entram na partilha?
