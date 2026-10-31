@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 23 | Contrato de convivência: como blindar o patrimônio na união estável | contrato de união estável | Divórcio e partilha |
 | 24 | Quem são os herdeiros necessários e qual a parte que não se pode tirar | herdeiros necessários legítima | Inventário e herança |
 | 25 | O cônjuge herda? Como funciona a concorrência com os filhos | cônjuge tem direito a herança | Inventário e herança |
 | 26 | Companheiro em união estável tem direito à herança? | união estável direito a herança | Inventário e herança |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-10-28 · Empresa no divórcio: o que acontece com as cotas da sociedade
 - 2026-10-29 · Voltar a usar o nome de solteiro depois do divórcio
 - 2026-10-30 · Separação de fato: a partir de quando os bens deixam de se comunicar
+- 2026-10-31 · Contrato de convivência: como blindar o patrimônio na união estável
