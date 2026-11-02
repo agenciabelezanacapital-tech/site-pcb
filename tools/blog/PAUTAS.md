@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 25 | O cônjuge herda? Como funciona a concorrência com os filhos | cônjuge tem direito a herança | Inventário e herança |
 | 26 | Companheiro em união estável tem direito à herança? | união estável direito a herança | Inventário e herança |
 | 27 | Meação e herança não são a mesma coisa | diferença meação e herança | Inventário e herança |
 | 28 | ITCMD no Distrito Federal: como funciona o imposto do inventário | itcmd inventário df | Inventário e herança |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-10-30 · Separação de fato: a partir de quando os bens deixam de se comunicar
 - 2026-10-31 · Contrato de convivência: como blindar o patrimônio na união estável
 - 2026-11-01 · Quem são os herdeiros necessários e qual a parte que não se pode tirar
+- 2026-11-02 · O cônjuge herda? Como funciona a concorrência com os filhos
