@@ -238,7 +238,7 @@ footer .btn-wa{font-size:.92rem;padding:14px 24px}
 .depo figcaption span{display:block;font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:4px;font-weight:400}
 
 .sec-falar{background:var(--navy-2);border-top:1px solid var(--line)}
-.falar-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.falar-grid{display:grid;grid-template-columns:1fr;gap:34px;align-items:start;max-width:760px}
 @media(max-width:860px){.falar-grid{grid-template-columns:1fr}}
 .falar-txt h2{margin-bottom:14px}
 .falar-vias{display:flex;flex-direction:column;gap:12px;margin-top:26px}

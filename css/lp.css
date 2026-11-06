@@ -70,7 +70,7 @@
 .socio-min p{font-size:.88rem;line-height:1.62;color:var(--muted)}
 
 /* formulario */
-.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.form-grid{display:grid;grid-template-columns:1fr;gap:34px;align-items:start;max-width:760px}
 .form-txt .eyebrow{margin-bottom:14px;color:var(--gold)}
 .form-txt>p{color:var(--text);font-size:.96rem;line-height:1.75;margin-bottom:22px}
 .lp-locais{margin-top:22px;display:grid;gap:10px}
