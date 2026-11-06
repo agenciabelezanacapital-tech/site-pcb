@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 29 | Documentos necessários para abrir o inventário | documentos para inventário | Inventário e herança |
 | 30 | O que acontece com as dívidas de quem faleceu | dívidas do falecido herdeiros | Inventário e herança |
 | 31 | Como o inventário trata conta bancária, FGTS e seguro de vida | como sacar conta de falecido | Inventário e herança |
 | 32 | Inventário com um só herdeiro: como fica o procedimento | inventário de herdeiro único | Inventário e herança |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-03 · Companheiro em união estável tem direito à herança?
 - 2026-11-04 · Meação e herança não são a mesma coisa
 - 2026-11-05 · ITCMD no Distrito Federal: como funciona o imposto do inventário
+- 2026-11-06 · Documentos necessários para abrir o inventário
