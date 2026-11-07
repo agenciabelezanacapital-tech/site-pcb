@@ -564,13 +564,19 @@ footer p.small{font-family:var(--sans);text-transform:none;letter-spacing:0;font
 
   render();
 
-  // Versao publicada no Vercel: os numeros vem do arquivo dados.json, gravado
-  // uma vez por dia pela leitura automatica da planilha.
+  // Versao publicada no Vercel: os numeros vem ao vivo de /api/radar, que le a
+  // planilha na hora. Se a funcao falhar, cai no dados.json (ultimo retrato).
   (function () {
-    fetch('dados.json?v=' + Date.now())
+    function usar(j) { dados = j; marcarAtualizacao(); render(); }
+    fetch('/api/radar?v=' + Date.now())
       .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
-      .then(function (j) { dados = j; marcarAtualizacao(); render(); })
-      .catch(function () { $('pillAtualizado').textContent = 'sem conexão'; });
+      .then(usar)
+      .catch(function () {
+        fetch('dados.json?v=' + Date.now())
+          .then(function (r) { if (!r.ok) throw new Error('http ' + r.status); return r.json(); })
+          .then(usar)
+          .catch(function () { $('pillAtualizado').textContent = 'sem conexão'; });
+      });
   })();
 })();
 </script>
