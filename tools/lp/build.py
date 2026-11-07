@@ -61,7 +61,7 @@ CENAS = {'advogado-divorcio-brasilia': ('leonardo-trabalho',
  'advogado-direito-consumidor-brasilia': ('pimentel-atendimento',
                                           'Rinaldo Pimentel em cena ilustrativa de atendimento a '
                                           'um casal'),
- 'advogado-direito-medico-brasilia': ('socios-atendimento',
+ 'advogado-direito-medico-brasilia': ('socios-atendimento-v2',
                                       'Leonardo Castello Branco e Rinaldo Pimentel em cena '
                                       'ilustrativa de atendimento acessível')}
 
