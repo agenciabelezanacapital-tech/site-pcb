@@ -64,7 +64,7 @@
 /* socios */
 .socios-min{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .socio-min{display:flex;gap:18px;padding:20px;border:1px solid var(--line);border-radius:var(--radius);background:var(--navy-2)}
-.socio-min img{width:104px;height:132px;object-fit:cover;border-radius:10px;flex-shrink:0}
+.socio-min img{width:104px;height:132px;object-fit:cover;object-position:center 15%;border-radius:10px;flex-shrink:0}
 .socio-min h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:1.2rem;color:var(--cream);line-height:1.2}
 .socio-min .oab{font-family:'IBM Plex Mono',monospace;font-size:.58rem;letter-spacing:.14em;color:var(--gold);margin:5px 0 9px}
 .socio-min p{font-size:.88rem;line-height:1.62;color:var(--muted)}

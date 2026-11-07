@@ -303,3 +303,32 @@ a.area-sec .area-link{margin-top:12px}
 .socios-dupla,.foto-faixa{margin:30px 0 0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
 .socios-dupla img,.foto-faixa img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block}
 .socios-dupla{margin-bottom:16px}
+
+/* Fotografias aprovadas: abertura, atendimento, rotina e sócios. */
+.hero-com-foto{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(30px,4vw,64px);max-width:1600px;margin:0 auto}
+.hero-com-foto .hero-txt{text-align:left;max-width:700px}
+.hero-com-foto .hero-actions,.hero-com-foto .hero-kicker,.hero-com-foto .hero-areas,.hero-com-foto .eyebrow{justify-content:flex-start}
+.hero-com-foto h1{font-size:clamp(2rem,3.5vw,3.15rem)}
+.hero-photo,.contexto-photo,.estacao-photo{margin:0;overflow:hidden;border:1px solid var(--line-strong);border-radius:var(--radius);background:var(--navy-2)}
+.hero-photo{box-shadow:var(--shadow)}
+.hero-photo img,.contexto-photo img,.estacao-photo img{display:block;width:100%;height:auto}
+.contexto-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:30px;margin-top:32px}
+.contexto-grid .faq-grid{grid-template-columns:1fr;margin-top:0}
+.diff-intro{align-items:center;gap:clamp(30px,5vw,70px)}
+.diff-visual{max-width:420px}
+.diff-visual .diff-quote{margin-top:24px}
+.estacao-photo img{aspect-ratio:2/3}
+.socio-photo{height:auto;object-position:center 15%}
+.foto-faixa img{aspect-ratio:3/2}
+@media(max-width:1000px){
+  .hero-com-foto{grid-template-columns:1fr;gap:30px;min-height:auto}
+  .hero-com-foto .hero-txt{max-width:800px;margin:auto;text-align:center}
+  .hero-com-foto .hero-actions,.hero-com-foto .hero-kicker,.hero-com-foto .hero-areas,.hero-com-foto .eyebrow{justify-content:center}
+  .hero-photo{width:100%;max-width:800px;margin:0 auto}
+}
+@media(max-width:900px){.contexto-grid{grid-template-columns:1fr;gap:24px}}
+@media(max-width:760px){
+  .diff-visual{max-width:440px;width:100%;margin:0 auto}
+  .hero-com-foto h1{font-size:clamp(1.95rem,6.5vw,2.7rem)}
+  .socio-photo{aspect-ratio:3/4}
+}

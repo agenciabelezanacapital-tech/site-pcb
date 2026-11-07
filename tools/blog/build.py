@@ -193,7 +193,7 @@ def build_post(p, prev_next):
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{p['title_tag']}">
 <meta property="og:description" content="{p['description']}">
-<meta property="og:image" content="{BASE}/images/socios-leonardo-rinaldo.jpg">
+<meta property="og:image" content="{BASE}/images/aprovadas/socios-compartilhamento.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
@@ -268,7 +268,7 @@ def build_index(posts):
 <meta property="og:url" content="{BASE}/blog/">
 <meta property="og:title" content="Blog | Direito de Família e Sucessões · PCB Advogados">
 <meta property="og:description" content="Divórcio, inventário, guarda, pensão e partilha de bens explicados sem juridiquês.">
-<meta property="og:image" content="{BASE}/images/socios-leonardo-rinaldo.jpg">
+<meta property="og:image" content="{BASE}/images/aprovadas/socios-compartilhamento.jpg">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 </head>
 <body class="blog">

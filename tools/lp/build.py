@@ -36,28 +36,47 @@ STAR = '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><pat
 SOCIOS = {
  "leonardo": {
    "nome":"Leonardo Cidade Castello Branco", "oab":"OAB/DF 46809",
-   "foto":"leonardo.jpg", "pos":"center 24%",
+   "foto":"aprovadas/leonardo-perfil.webp", "pos":"center 15%", "width":1122, "height":1402,
    "bio":"Conduz as causas de Direito de Família e Sucessões. Especialização na área pelo IBMEC e formação em Comunicação Social.",
  },
  "rinaldo": {
    "nome":"Rinaldo Pimentel", "oab":"OAB/DF 84596",
-   "foto":"rinaldo.jpg", "pos":"center 17%",
+   "foto":"aprovadas/pimentel-retrato.webp", "pos":"center 15%", "width":1024, "height":1536,
    "bio":"Conduz as causas de Direito Civil, do Consumidor, Médico e da Saúde, contratos e Direito Militar. Mestre em Direito Constitucional pelo IDP e membro das Comissões de Direito Civil, Militar e do Consumidor da OAB/DF.",
  },
 }
 
-def bloco_socio(chave):
-    """Cartao do socio responsavel pela area. A segunda foto (estacao de
-    trabalho) so entra se o arquivo existir em images/, para a pagina nao
-    quebrar enquanto as fotos nao chegam."""
+CENAS = {'advogado-divorcio-brasilia': ('leonardo-trabalho',
+                                'Leonardo Castello Branco trabalhando na estação de atendimento'),
+ 'advogado-guarda-brasilia': ('leonardo-atendimento',
+                              'Leonardo Castello Branco em cena ilustrativa de atendimento'),
+ 'advogado-pensao-alimenticia-brasilia': ('leonardo-trabalho',
+                                          'Leonardo Castello Branco trabalhando na estação de '
+                                          'atendimento'),
+ 'advogado-inventario-brasilia': ('socios-reuniao',
+                                  'Leonardo Castello Branco e Rinaldo Pimentel reunidos para '
+                                  'analisar documentos'),
+ 'advogado-contratos-brasilia': ('pimentel-trabalho',
+                                 'Rinaldo Pimentel trabalhando na estação de atendimento'),
+ 'advogado-direito-consumidor-brasilia': ('pimentel-atendimento',
+                                          'Rinaldo Pimentel em cena ilustrativa de atendimento a '
+                                          'um casal'),
+ 'advogado-direito-medico-brasilia': ('socios-atendimento',
+                                      'Leonardo Castello Branco e Rinaldo Pimentel em cena '
+                                      'ilustrativa de atendimento acessível')}
+
+def bloco_socio(chave, slug):
+    """Retrato e cena aprovados para cada página de serviço."""
     sc = SOCIOS[chave]
     extra = ""
-    nome_extra = f"estacao-{chave}.jpg"
+    nome, alt_extra = CENAS[slug]
+    nome_extra = f"aprovadas/{nome}.webp"
     if (ROOT / "images" / nome_extra).exists():
         extra = (f'<img class="socio-estacao" src="../images/{nome_extra}" '
-                 f'alt="{sc["nome"]} no escritório, em Brasília" width="900" height="600" loading="lazy">')
+                 f'srcset="../images/aprovadas/{nome}-640.webp 640w, ../images/{nome_extra} 1536w" sizes="(max-width: 760px) 88vw, 760px" '
+                 f'alt="{alt_extra}" width="1536" height="1024" loading="lazy" decoding="async">')
     return f'''<div class="socio-min">
-      <img src="../images/{sc["foto"]}" alt="{sc["nome"]}" width="480" height="640" style="object-position:{sc["pos"]}" loading="lazy">
+      <img src="../images/{sc["foto"]}" alt="{sc["nome"]}" width="{sc["width"]}" height="{sc["height"]}" srcset="../images/{sc["foto"].replace(".webp", "-640.webp")} 640w, ../images/{sc["foto"]} {sc["width"]}w" sizes="104px" style="object-position:{sc["pos"]}" loading="lazy" decoding="async">
       <div>
         <h3>{sc["nome"]}</h3>
         <p class="oab">{sc["oab"]}</p>
@@ -108,7 +127,7 @@ def page(a):
 <meta property="og:url" content="{url}">
 <meta property="og:title" content="{a['title_tag']}">
 <meta property="og:description" content="{a['description']}">
-<meta property="og:image" content="{BASE}/images/socios-leonardo-rinaldo.jpg">
+<meta property="og:image" content="{BASE}/images/aprovadas/socios-compartilhamento.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="../images/selo-navy.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -182,7 +201,7 @@ def page(a):
 <section class="lp-socios"><div class="lp-wrap">
   <h2>Quem vai cuidar do seu caso</h2>
   <div class="socios-min um-socio">
-    {bloco_socio(a['socio'])}
+    {bloco_socio(a['socio'], a['slug'])}
   </div>
 </div></section>
 
