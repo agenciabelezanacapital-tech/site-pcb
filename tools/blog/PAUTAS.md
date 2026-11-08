@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 31 | Como o inventário trata conta bancária, FGTS e seguro de vida | como sacar conta de falecido | Inventário e herança |
 | 32 | Inventário com um só herdeiro: como fica o procedimento | inventário de herdeiro único | Inventário e herança |
 | 33 | Doação em vida: quando ela antecipa a herança e quando não | doação em vida herança | Inventário e herança |
 | 34 | Holding familiar: o que é e para quem realmente faz sentido | holding familiar | Inventário e herança |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-05 · ITCMD no Distrito Federal: como funciona o imposto do inventário
 - 2026-11-06 · Documentos necessários para abrir o inventário
 - 2026-11-07 · O que acontece com as dívidas de quem faleceu
+- 2026-11-08 · Como o inventário trata conta bancária, FGTS e seguro de vida
