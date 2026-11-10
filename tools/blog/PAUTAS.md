@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 33 | Doação em vida: quando ela antecipa a herança e quando não | doação em vida herança | Inventário e herança |
 | 34 | Holding familiar: o que é e para quem realmente faz sentido | holding familiar | Inventário e herança |
 | 35 | Sobrepartilha: quando aparece um bem depois do inventário encerrado | sobrepartilha bem esquecido | Inventário e herança |
 | 36 | Posso impedir as visitas do outro genitor? | impedir visita do pai | Guarda e convivência |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-07 · O que acontece com as dívidas de quem faleceu
 - 2026-11-08 · Como o inventário trata conta bancária, FGTS e seguro de vida
 - 2026-11-09 · Inventário com um só herdeiro: como fica o procedimento
+- 2026-11-10 · Doação em vida: quando ela antecipa a herança e quando não
