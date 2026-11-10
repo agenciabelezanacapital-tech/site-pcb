@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/:path*", "destination": "https://pcb-instagram-previa-kme2l95p0-beleza-na-capitals-projects.vercel.app/:path*" }
+  ]
+}
