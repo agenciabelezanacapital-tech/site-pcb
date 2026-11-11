@@ -37,12 +37,12 @@ SOCIOS = {
  "leonardo": {
    "nome":"Leonardo Cidade Castello Branco", "oab":"OAB/DF 46809",
    "foto":"aprovadas/leonardo-perfil.webp", "pos":"center 15%", "width":1122, "height":1402,
-   "bio":"Conduz as causas de Direito de Família e Sucessões. Especialista na área pelo IBMEC e formado em Comunicação Social. Foi membro do IBDFAM (Instituto Brasileiro de Direito de Família) e da Comissão de Direito de Família da OAB/DF.",
+   "bio":"Conduz as causas de Direito de Família e Sucessões. Especialista na área pelo IBMEC e formado em Comunicação Social. Foi membro do IBDFAM (Instituto Brasileiro de Direito das Famílias e Sucessões) e da Comissão de Direito de Família da OAB/DF.",
  },
  "rinaldo": {
    "nome":"Rinaldo Pimentel", "oab":"OAB/DF 84596",
    "foto":"aprovadas/pimentel-retrato.webp", "pos":"center 15%", "width":1024, "height":1536,
-   "bio":"Conduz as causas de Direito Civil, do Consumidor, Médico e da Saúde, contratos e Direito Militar. Mestre em Direito Constitucional pelo IDP e membro das Comissões de Direito das Famílias, Direito Médico, Direito Militar e Direito de Execução Cível e Recuperação de Crédito da OAB/DF.",
+   "bio":"Conduz as causas de Direito Civil, do Consumidor, Médico e da Saúde, contratos e Direito Militar. Mestre em Direito Constitucional pelo IDP e membro das Comissões de Direito Civil, Direito do Consumidor, Direito das Famílias, Direito Médico, Direito Militar e Direito de Execução Cível e Recuperação de Crédito da OAB/DF.",
  },
 }
 
