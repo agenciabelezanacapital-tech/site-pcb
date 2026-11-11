@@ -1,0 +1,131 @@
+
+@font-face{font-family:Cormorant;src:url('assets/fonts/Cormorant-Medium.ttf');font-weight:500}
+@font-face{font-family:Cormorant;src:url('assets/fonts/Cormorant-Semibold.ttf');font-weight:600}
+@font-face{font-family:Cormorant;src:url('assets/fonts/Cormorant-Italic.ttf');font-style:italic;font-weight:500}
+@font-face{font-family:Outfit;src:url('assets/fonts/Outfit-Regular.ttf');font-weight:400}
+@font-face{font-family:Outfit;src:url('assets/fonts/Outfit-Semibold.ttf');font-weight:600}
+@font-face{font-family:Plex;src:url('assets/fonts/IBM-Plex-Mono.ttf');font-weight:500}
+:root{--navy:#0C1B2A;--surface:#122A3F;--gold:#C9A96E;--cream:#F2F5F8;--text:#C3D0DC;--line:rgba(201,169,110,.32)}
+*{box-sizing:border-box}html,body{margin:0;background:#07111b}body{font-family:Outfit,sans-serif;color:var(--cream);font-weight:400}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--navy);isolation:isolate}
+.slide:before{content:'';position:absolute;inset:24px;border:1px solid rgba(201,169,110,.18);pointer-events:none;z-index:5}
+.slide:after{content:'';position:absolute;width:400px;height:1px;right:-100px;top:180px;background:var(--line);transform:rotate(-45deg);z-index:-1}
+.top{position:absolute;top:65px;left:72px;right:72px;height:94px;display:flex;justify-content:space-between;align-items:center}
+.brand{width:300px;height:auto}
+.top-label{font-family:Plex,monospace;font-size:20px;line-height:1.6;letter-spacing:2px;color:var(--gold);text-align:right;text-transform:uppercase}
+.footer{position:absolute;left:72px;right:72px;bottom:54px;height:65px;border-top:1px solid var(--line);padding-top:22px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.footer span{font-size:21px;letter-spacing:.2px;color:var(--text)}
+.footer b{font-family:Plex,monospace;color:var(--gold);font-size:22px;font-weight:500;white-space:nowrap}
+h1,h2,h3,p{margin:0}h1,h2,h3{font-family:Cormorant,Georgia,serif;font-weight:500;letter-spacing:-1.6px}
+h1{font-size:110px;line-height:.98}h2{font-size:94px;line-height:1.02}h3{font-size:52px;line-height:1.07;letter-spacing:-.5px}
+em{font-style:italic;color:var(--gold)}p{font-size:35px;line-height:1.38;color:var(--text)}
+.eyebrow{font-family:Plex,monospace;font-size:22px;line-height:1.5;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
+.rule{width:70px;height:3px;background:var(--gold);margin:25px 0}
+.body{position:absolute;left:72px;right:72px;top:218px;bottom:152px}
+.photo{overflow:hidden;border-radius:18px;border:1px solid var(--line);margin:0;position:relative;background:var(--surface)}
+.photo img{width:100%;height:auto;display:block}
+.photo small{position:absolute;bottom:16px;right:16px;padding:6px 10px;background:rgba(12,27,42,.82);font-size:18px;color:var(--cream)}
+.cover h1{max-width:920px;margin-top:12px}
+.cover .subtitle{margin-top:24px;font-size:32px;line-height:1.35}
+.cover .photo{position:absolute;left:72px;right:72px;top:550px}
+.cover .bottom-note{position:absolute;top:1190px;left:72px;right:72px;font-size:24px;line-height:1.2;color:var(--gold);display:flex;justify-content:space-between}
+.cover .top-label{font-size:19px}
+.cover-2{background:var(--surface)}
+.cover-2 h1{font-size:109px}
+.cover-3 h1{font-size:106px}
+.cover .body{top:201px}
+.cover .eyebrow{font-size:21px;margin-bottom:18px}
+.overview .split-title{display:grid;grid-template-columns:1.05fr 1fr;gap:50px;align-items:end}
+.overview h2{font-size:100px}
+.overview .photo{position:absolute;left:0;right:0;bottom:0}
+.overview .intro{font-size:34px;line-height:1.4;padding-bottom:10px}
+.profile h2{font-size:85px;line-height:1.02;max-width:910px}
+.profile .profile-grid{display:grid;grid-template-columns:480px 1fr;gap:42px;margin-top:36px;align-items:center}
+.profile .photo{width:480px}
+.profile h3{font-size:47px;margin-top:28px;margin-bottom:20px}
+.profile .oab{font-family:Plex,monospace;font-size:25px;color:var(--gold);letter-spacing:1px}
+.profile .bio{font-size:33px;line-height:1.45}
+.profile .bio-rule{border-top:1px solid var(--line);padding-top:24px;margin-top:28px}
+.profile .qual{font-size:30px;line-height:1.45;color:var(--text)}
+.closing .seal{height:156px;width:auto;display:block;margin-bottom:40px}
+.closing .body{top:238px}
+.closing h2{font-size:104px;max-width:930px}
+.closing p{max-width:840px;margin-top:30px;font-size:35px}
+.contact-box{margin-top:50px;padding:35px 38px;background:var(--surface);border:1px solid var(--line);border-radius:18px}
+.contact-box .eyebrow{font-size:21px}
+.contact-box .phone{font-size:50px;letter-spacing:1px;color:var(--cream);margin-top:10px}
+.contact-box .url{font-size:29px;color:var(--gold);margin-top:10px}
+.contact-box .mode{font-size:27px;margin-top:18px}
+.list-slide .body{top:210px}
+.list-slide h2{font-size:94px;margin-top:16px}
+.list-slide .deck{margin-top:22px;max-width:870px;font-size:33px}
+.rows{margin-top:42px}
+.row{border-top:1px solid var(--line);padding:24px 0 25px;display:grid;grid-template-columns:70px 1fr;gap:25px}
+.row .num{font-family:Plex,monospace;color:var(--gold);font-size:27px;padding-top:6px}
+.row h3{font-size:47px;color:var(--cream)}
+.row p{font-size:32px;line-height:1.35;margin-top:10px}
+.successions h2{font-size:94px;margin-top:16px}
+.successions .mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin-top:38px}
+.successions .point{border-top:1px solid var(--line);padding-top:24px}
+.successions .point h3{font-size:43px;margin-bottom:12px}
+.successions .point p{font-size:31px}
+.successions .photo{width:700px;margin:35px auto 0}
+.successions .photo img{width:100%;height:auto}
+.other .rows{margin-top:28px}
+.other .row{padding:21px 0}
+.other .row h3{font-size:45px}
+.other .row p{font-size:31px}
+.steps-pair h2{font-size:98px;margin-top:14px}
+.steps-pair .two-cols{display:grid;grid-template-columns:1fr 455px;gap:42px;align-items:center;margin-top:48px}
+.steps-pair .photo{width:455px}
+.step-label{font-family:Plex,monospace;color:var(--gold);font-size:22px;letter-spacing:2px;margin-bottom:18px}
+.step-text h3{font-size:50px;margin-bottom:17px}
+.step-text p{font-size:33px;line-height:1.45}
+.step-text+.step-text{border-top:1px solid var(--line);margin-top:38px;padding-top:32px}
+.analysis h2{font-size:99px;max-width:850px}
+.analysis .deck{font-size:34px;margin-top:23px;max-width:880px}
+.analysis .photo{position:absolute;left:38px;width:860px;bottom:0}
+.analysis .tags{display:flex;gap:13px;margin-top:26px;flex-wrap:wrap}
+.analysis .tags span{border:1px solid var(--line);border-radius:40px;padding:12px 23px;font-size:25px;color:var(--gold)}
+.follow h2{font-size:91px;margin-top:17px;max-width:920px}
+.follow .rows{margin-top:45px}
+.follow .row{padding:22px 0}
+.follow .row h3{font-size:51px}
+.follow .row p{font-size:32px}
+.follow .quiet{margin-top:25px;font-size:29px;color:var(--gold)}
+.giant{position:absolute;right:48px;bottom:120px;font-family:Cormorant,serif;font-size:380px;line-height:1;color:rgba(201,169,110,.035);z-index:-1}
+
+
+/* Capas como conjunto: marca, foto e tipografia. */
+.cover{background:radial-gradient(900px 700px at 0 0,rgba(201,169,110,.055),transparent 68%),var(--navy)}
+.cover:before,.cover:after{display:none}
+.cover .top-label{display:none}
+.cover .footer{left:84px;right:84px}
+.cover .bottom-note{left:84px;right:84px;top:1168px;font-size:23px}
+.cover .eyebrow{font-size:23px;letter-spacing:4px}
+.cover-rule{width:76px;height:2px;background:var(--gold)}
+.cover-1 .top{top:330px;left:84px;right:84px;height:225px;justify-content:center}
+.cover-1 .brand{width:700px}
+.cover-1 .body{top:613px;left:84px;right:84px;text-align:center}
+.cover-1 h1{font-size:131px;line-height:.97;margin:27px 0 0}
+.cover-1 .cover-rule{margin:35px auto 0}
+.cover-1 .subtitle{font-size:35px;margin-top:30px}
+.cover-1 .bottom-note span:first-child{visibility:hidden}
+.cover-2 .top{display:none}
+.cover-2 .cover-scene{position:absolute;left:0;right:0;top:0;margin:0;height:720px}
+.cover-2 .cover-scene img{display:block;width:100%;height:auto}
+.cover-2 .cover-scene:after{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(12,27,42,.05) 0%,rgba(12,27,42,.05) 46%,rgba(12,27,42,.48) 77%,#0C1B2A 100%)}
+.cover-2 .body{top:731px;left:84px;right:84px}
+.cover-2 h1{font-size:114px;line-height:1;margin-top:20px}
+.cover-2 .subtitle{font-size:33px;margin-top:29px}
+.cover-3 .top{top:74px;height:100px;justify-content:center}
+.cover-3 .brand{width:240px}
+.cover-3 .body{top:445px;left:84px;right:84px}
+.cover-3 .cover-rule{margin-bottom:44px}
+.cover-3 .eyebrow{margin-bottom:37px}
+.cover-3 h1{font-size:118px;line-height:1.02;margin:0}
+.cover-3 .subtitle{font-size:36px;line-height:1.4;margin-top:40px}
+
+.profile .bio{font-size:29px;line-height:1.4}
+.profile .qual{font-size:26px;line-height:1.4}
+.profile .bio-rule{padding-top:18px;margin-top:22px}
