@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 35 | Sobrepartilha: quando aparece um bem depois do inventário encerrado | sobrepartilha bem esquecido | Inventário e herança |
 | 36 | Posso impedir as visitas do outro genitor? | impedir visita do pai | Guarda e convivência |
 | 37 | Mudar de cidade com o filho: o que a lei exige | mudar de cidade com filho guarda | Guarda e convivência |
 | 38 | Como regularizar a guarda quando nunca houve processo | regularizar guarda de filho | Guarda e convivência |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-09 · Inventário com um só herdeiro: como fica o procedimento
 - 2026-11-10 · Doação em vida: quando ela antecipa a herança e quando não
 - 2026-11-11 · Holding familiar: o que é e para quem realmente faz sentido
+- 2026-11-12 · Sobrepartilha: quando aparece um bem depois do inventário encerrado
