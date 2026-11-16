@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 38 | Como regularizar a guarda quando nunca houve processo | regularizar guarda de filho | Guarda e convivência |
 | 39 | Guarda do pet: como a Justiça trata os animais na separação | guarda de cachorro separação | Guarda e convivência |
 | 40 | Visita dos avós: o direito de convivência da família extensa | direito de visita dos avós | Guarda e convivência |
 | 41 | Convivência de bebês e crianças pequenas: por que o calendário é diferente | convivência filho recém nascido | Guarda e convivência |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-12 · Sobrepartilha: quando aparece um bem depois do inventário encerrado
 - 2026-11-13 · Posso impedir as visitas do outro genitor?
 - 2026-11-14 · Mudar de cidade com o filho: o que a lei exige
+- 2026-11-16 · Como regularizar a guarda quando nunca houve processo
