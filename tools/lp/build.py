@@ -99,7 +99,7 @@ def page(a):
        "description":a["description"],"url":url,"telephone":"+5561991193026",
        "areaServed":{"@type":"City","name":"Brasília"},
        "parentOrganization":{"@type":"Organization","name":"Pimentel e Castello Branco Advogados Associados","url":BASE+"/"},
-       "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"63"}},
+       "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"71"}},
       {"@type":"BreadcrumbList","itemListElement":[
         {"@type":"ListItem","position":1,"name":"Início","item":BASE+"/"},
         {"@type":"ListItem","position":2,"name":a["nome"],"item":url}]},
@@ -158,7 +158,7 @@ def page(a):
     <p class="lp-lead">{a['lead']}</p>
     <a class="hero-prova" href="https://maps.google.com/maps?cid=1482512693113634362" target="_blank" rel="noopener" data-evt="perfil-google">
       <span class="estrelas" aria-hidden="true">{STAR*5}</span>
-      <span><b>5,0</b> · 63 avaliações no Google</span>
+      <span><b>5,0</b> · 71 avaliações no Google</span>
     </a>
     <div class="lp-acts">
       {btn_wa(a['wa'], 'Falar com um advogado agora')}
@@ -225,19 +225,29 @@ def page(a):
       </div>
     </div>
 
-    <form class="falar-form" id="formCaso" novalidate>
-      <p class="form-tit">Prefere escrever? Responda em um minuto</p>
-      <label for="f-nome">Seu nome</label>
-      <input id="f-nome" name="nome" type="text" autocomplete="name" required placeholder="Como podemos te chamar">
-      <label for="f-contato">WhatsApp ou telefone</label>
-      <input id="f-contato" name="contato" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(61) 90000-0000">
-      <input type="hidden" id="f-assunto" name="assunto" value="{a['assunto']}">
-      <label for="f-caso">Em poucas palavras, o que está acontecendo <span class="opc">(opcional)</span></label>
-      <textarea id="f-caso" name="caso" rows="3" placeholder="Não precisa saber o nome jurídico do problema"></textarea>
-      <input type="text" name="empresa" id="f-empresa" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <button type="submit" class="form-btn">Enviar para o escritório</button>
-      <p class="form-nota" id="formNota">Ao enviar, você recebe o retorno pelo contato informado. Conteúdo informativo, sem promessa de resultado.</p>
-    </form>
+    <div class="cf-card" data-assunto="{a['assunto']}">
+      <p class="form-tit">Prefere escrever? Comece por aqui</p>
+      <div class="cf-label">Qual a sua situação?</div>
+      <div class="cf-opts" id="cf-situacao">
+        <button type="button" class="cf-opt" data-v="Divórcio e partilha">Divórcio e partilha</button>
+        <button type="button" class="cf-opt" data-v="Inventário e herança">Inventário e herança</button>
+        <button type="button" class="cf-opt" data-v="Guarda e convivência">Guarda e convivência</button>
+        <button type="button" class="cf-opt" data-v="Pensão alimentícia">Pensão alimentícia</button>
+        <button type="button" class="cf-opt cf-full" data-v="Outro assunto">Outro assunto</button>
+      </div>
+      <div class="cf-label">Como prefere ser atendido? <span>(opcional)</span></div>
+      <div class="cf-opts" id="cf-atend">
+        <button type="button" class="cf-opt" data-v="Presencial">Presencial</button>
+        <button type="button" class="cf-opt" data-v="Online">Online</button>
+      </div>
+      <div class="cf-label">Seu nome <span>(opcional)</span></div>
+      <input id="cf-nome" type="text" class="cf-input" placeholder="Como podemos te chamar?" autocomplete="name">
+      <button type="button" class="cf-btn" id="cf-enviar">
+        <svg class="ico-wa" width="21" height="21" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>
+        Falar no WhatsApp
+      </button>
+      <p class="cf-hint">Resposta em até <b>1 hora</b> no horário comercial · Nada do que você escrever é compartilhado fora do escritório.</p>
+    </div>
   </div>
 </div></section>
 

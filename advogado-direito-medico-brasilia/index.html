@@ -112,13 +112,13 @@ function gtag_report_conversion(url) {
   <h2>Quem vai cuidar do seu caso</h2>
   <div class="socios-min um-socio">
     <div class="socio-min">
-      <img src="../images/aprovadas/pimentel-retrato.webp" srcset="../images/aprovadas/pimentel-retrato-640.webp 640w, ../images/aprovadas/pimentel-retrato.webp 1024w" sizes="104px" alt="Rinaldo Pimentel" width="1024" height="1536" class="" loading="lazy" decoding="async">
+      <img src="../images/aprovadas/pimentel-retrato.webp" alt="Rinaldo Pimentel" width="1024" height="1536" srcset="../images/aprovadas/pimentel-retrato-640.webp 640w, ../images/aprovadas/pimentel-retrato.webp 1024w" sizes="104px" style="object-position:center 15%" loading="lazy" decoding="async">
       <div>
         <h3>Rinaldo Pimentel</h3>
         <p class="oab">OAB/DF 84596</p>
         <p>Conduz as causas de Direito Civil, do Consumidor, Médico e da Saúde, contratos e Direito Militar. Mestre em Direito Constitucional pelo IDP e membro das Comissões de Direito Civil, Direito do Consumidor, Direito das Famílias, Direito Médico, Direito Militar e Direito de Execução Cível e Recuperação de Crédito da OAB/DF.</p>
       </div>
-    </div><img src="../images/aprovadas/socios-atendimento-v2.webp" srcset="../images/aprovadas/socios-atendimento-v2-640.webp 640w, ../images/aprovadas/socios-atendimento-v2.webp 1536w" sizes="(max-width: 760px) 88vw, 760px" alt="Leonardo Castello Branco e Rinaldo Pimentel em cena ilustrativa de atendimento acessível" width="1536" height="1024" class="socio-estacao" loading="lazy" decoding="async">
+    </div><img class="socio-estacao" src="../images/aprovadas/socios-atendimento-v2.webp" srcset="../images/aprovadas/socios-atendimento-v2-640.webp 640w, ../images/aprovadas/socios-atendimento-v2.webp 1536w" sizes="(max-width: 760px) 88vw, 760px" alt="Leonardo Castello Branco e Rinaldo Pimentel em cena ilustrativa de atendimento acessível" width="1536" height="1024" loading="lazy" decoding="async">
   </div>
 </div></section>
 
@@ -126,9 +126,9 @@ function gtag_report_conversion(url) {
 <section class="lp-form" id="formulario"><div class="lp-wrap">
   <div class="form-grid">
     <div class="form-txt">
-      <p class="eyebrow mono">Fale direto com o escritório</p>
+      <p class="eyebrow mono">Três formas de começar</p>
       <h2>Conte o que está acontecendo. <em>Entenda os caminhos antes de decidir.</em></h2>
-      <p>No horário comercial a resposta costuma sair em até uma hora. Tudo o que você contar fica só com o escritório.</p>
+      <p>No horário comercial a resposta costuma sair em até uma hora. Nada do que você escrever aqui é compartilhado fora do escritório.</p>
       <div class="falar-vias">
         <a class="via via-wa" href="https://wa.me/5561991193026?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20plano%20de%20sa%C3%BAde%20ou%20direito%20m%C3%A9dico" target="_blank" rel="noopener" onclick="return gtag_report_conversion();">
           <svg class="ico-wa" width="20" height="20" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>
@@ -140,6 +140,30 @@ function gtag_report_conversion(url) {
         <div><b>Águas Claras</b>DF Plaza Shopping · Rua Copaíba nº 01, Bloco A, Salas 2010 a 2014</div>
         <div><b>Asa Sul</b>Complexo Brasil 21 · SHS Q06, Conj. A, Bloco A, Sala 501</div>
       </div>
+    </div>
+
+    <div class="cf-card" data-assunto="Direito Médico e da Saúde">
+      <p class="form-tit">Prefere escrever? Comece por aqui</p>
+      <div class="cf-label">Qual a sua situação?</div>
+      <div class="cf-opts" id="cf-situacao">
+        <button type="button" class="cf-opt" data-v="Divórcio e partilha">Divórcio e partilha</button>
+        <button type="button" class="cf-opt" data-v="Inventário e herança">Inventário e herança</button>
+        <button type="button" class="cf-opt" data-v="Guarda e convivência">Guarda e convivência</button>
+        <button type="button" class="cf-opt" data-v="Pensão alimentícia">Pensão alimentícia</button>
+        <button type="button" class="cf-opt cf-full" data-v="Outro assunto">Outro assunto</button>
+      </div>
+      <div class="cf-label">Como prefere ser atendido? <span>(opcional)</span></div>
+      <div class="cf-opts" id="cf-atend">
+        <button type="button" class="cf-opt" data-v="Presencial">Presencial</button>
+        <button type="button" class="cf-opt" data-v="Online">Online</button>
+      </div>
+      <div class="cf-label">Seu nome <span>(opcional)</span></div>
+      <input id="cf-nome" type="text" class="cf-input" placeholder="Como podemos te chamar?" autocomplete="name">
+      <button type="button" class="cf-btn" id="cf-enviar">
+        <svg class="ico-wa" width="21" height="21" fill="currentColor" aria-hidden="true"><use href="#ico-whatsapp"></use></svg>
+        Falar no WhatsApp
+      </button>
+      <p class="cf-hint">Resposta em até <b>1 hora</b> no horário comercial · Nada do que você escrever é compartilhado fora do escritório.</p>
     </div>
   </div>
 </div></section>

@@ -66,6 +66,55 @@ function init() {
   initNavToggle();
   initTracking();
   initForm();
+  initCaseForm();
+}
+
+function initCaseForm() {
+  var card = document.querySelector('.cf-card');
+  if (!card) return;
+  var sit = '', at = '';
+  function liga(groupId, setter) {
+    var g = document.getElementById(groupId);
+    if (!g) return;
+    g.querySelectorAll('.cf-opt').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var was = b.classList.contains('sel');
+        g.querySelectorAll('.cf-opt').forEach(function (x) { x.classList.remove('sel'); });
+        if (!was) { b.classList.add('sel'); setter(b.dataset.v); } else { setter(''); }
+        upd();
+      });
+    });
+  }
+  liga('cf-situacao', function (v) { sit = v; });
+  liga('cf-atend', function (v) { at = v; });
+  var nome = document.getElementById('cf-nome');
+  var btn = document.getElementById('cf-enviar');
+  var pre = card.getAttribute('data-assunto');
+  if (pre) {
+    sit = pre;
+    var pb = document.querySelector('#cf-situacao .cf-opt[data-v="' + pre + '"]');
+    if (pb) pb.classList.add('sel');
+  }
+  if (nome) nome.addEventListener('input', upd);
+  function texto() {
+    var t = 'Olá, vim pelo site.';
+    if (sit) t += '\nAssunto: ' + sit;
+    if (at) t += '\nAtendimento: ' + at;
+    var n = nome ? nome.value.trim() : '';
+    if (n) t += '\nNome: ' + n;
+    return t;
+  }
+  function upd() { if (btn) btn.disabled = !sit; }
+  upd();
+  if (btn) btn.addEventListener('click', function () {
+    if (btn.disabled) return;
+    var url = 'https://wa.me/5561991193026?text=' + encodeURIComponent(texto());
+    if (typeof gtag === 'function') {
+      gtag('event', 'conversion', { 'send_to': 'AW-18382324624/JFHuCMzKqeEcEJCHsL1E', 'value': 1.0, 'currency': 'BRL', 'transport_type': 'beacon' });
+    }
+    if (typeof track === 'function') track('envio_formulario', { assunto: sit || 'nao informado' });
+    window.open(url, '_blank', 'noopener');
+  });
 }
 
 
