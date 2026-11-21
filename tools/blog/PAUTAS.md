@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 43 | Guarda compartilhada quando os pais moram longe um do outro | guarda compartilhada pais em cidades diferentes | Guarda e convivência |
 | 44 | Viagem internacional com o filho: autorização e documentos | autorização de viagem para menor | Guarda e convivência |
 | 45 | Quem paga as despesas extras do filho além da pensão | despesas extras além da pensão | Pensão alimentícia |
 | 46 | Pensão para filho maior que está na faculdade | pensão para filho universitário | Pensão alimentícia |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-18 · Visita dos avós: o direito de convivência da família extensa
 - 2026-11-19 · Convivência de bebês e crianças pequenas: por que o calendário é diferente
 - 2026-11-20 · Reconhecimento de paternidade e exame de DNA
+- 2026-11-21 · Guarda compartilhada quando os pais moram longe um do outro
