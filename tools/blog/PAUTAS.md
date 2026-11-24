@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 45 | Quem paga as despesas extras do filho além da pensão | despesas extras além da pensão | Pensão alimentícia |
 | 46 | Pensão para filho maior que está na faculdade | pensão para filho universitário | Pensão alimentícia |
 | 47 | Exoneração de pensão: como pedir o fim da obrigação | exoneração de pensão alimentícia | Pensão alimentícia |
 | 48 | Pensão alimentícia quando quem paga é autônomo ou informal | pensão de pai autônomo | Pensão alimentícia |
@@ -106,3 +105,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-20 · Reconhecimento de paternidade e exame de DNA
 - 2026-11-21 · Guarda compartilhada quando os pais moram longe um do outro
 - 2026-11-23 · Viagem internacional com o filho: autorização e documentos
+- 2026-11-24 · Quem paga as despesas extras do filho além da pensão
