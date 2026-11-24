@@ -23,6 +23,7 @@ AREA_LP = {
  "Direito Médico e da Saúde":("advogado-direito-medico-brasilia","Direito médico e da saúde"),
  "Direito do Consumidor":("advogado-direito-consumidor-brasilia","Direito do consumidor"),
  "Contratos e direito civil":("advogado-contratos-brasilia","Contratos e direito civil"),
+ "Direito de Trânsito":("advogado-transito-brasilia","Direito de Trânsito"),
 }
 
 def cta_meio(p, up):
@@ -323,7 +324,7 @@ def build_feed(posts):
 LPS = ["advogado-divorcio-brasilia","advogado-inventario-brasilia",
        "advogado-guarda-brasilia","advogado-pensao-alimenticia-brasilia",
        "advogado-direito-medico-brasilia","advogado-direito-consumidor-brasilia",
-       "advogado-contratos-brasilia"]
+       "advogado-contratos-brasilia","advogado-transito-brasilia"]
 
 def build_sitemap(posts):
     urls = [(BASE+"/", "monthly", "1.0", None), (BASE+"/blog/", "weekly", "0.8", None)]

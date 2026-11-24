@@ -63,7 +63,9 @@ CENAS = {'advogado-divorcio-brasilia': ('leonardo-trabalho',
                                           'um casal'),
  'advogado-direito-medico-brasilia': ('socios-atendimento-v2',
                                       'Leonardo Castello Branco e Rinaldo Pimentel em cena '
-                                      'ilustrativa de atendimento acessível')}
+                                      'ilustrativa de atendimento acessível'),
+ 'advogado-transito-brasilia': ('pimentel-trabalho',
+                                'Rinaldo Pimentel trabalhando na estação de atendimento')}
 
 def bloco_socio(chave, slug):
     """Retrato e cena aprovados para cada página de serviço."""
@@ -233,6 +235,7 @@ def page(a):
         <button type="button" class="cf-opt" data-v="Inventário e herança">Inventário e herança</button>
         <button type="button" class="cf-opt" data-v="Guarda e convivência">Guarda e convivência</button>
         <button type="button" class="cf-opt" data-v="Pensão alimentícia">Pensão alimentícia</button>
+        <button type="button" class="cf-opt" data-v="Multa e trânsito">Multa e trânsito</button>
         <button type="button" class="cf-opt cf-full" data-v="Outro assunto">Outro assunto</button>
       </div>
       <div class="cf-label">Como prefere ser atendido? <span>(opcional)</span></div>
