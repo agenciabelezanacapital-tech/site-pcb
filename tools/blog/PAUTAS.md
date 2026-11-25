@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 46 | Pensão para filho maior que está na faculdade | pensão para filho universitário | Pensão alimentícia |
 | 47 | Exoneração de pensão: como pedir o fim da obrigação | exoneração de pensão alimentícia | Pensão alimentícia |
 | 48 | Pensão alimentícia quando quem paga é autônomo ou informal | pensão de pai autônomo | Pensão alimentícia |
 | 49 | Alimentos gravídicos: pensão durante a gravidez | alimentos gravídicos | Pensão alimentícia |
@@ -25,6 +24,16 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 | 52 | Acordo de pensão feito por fora tem valor? | acordo de pensão sem advogado | Pensão alimentícia |
 | 53 | Pensão e nascimento de outro filho: o que muda no valor | novo filho reduz pensão | Pensão alimentícia |
 | 54 | Prescrição da pensão atrasada: até quando dá para cobrar | prazo para cobrar pensão atrasada | Pensão alimentícia |
+| 55 | Inventário em cartório precisa de advogado? | inventário em cartório precisa de advogado | Inventário e herança |
+| 56 | Todo divórcio precisa de advogado? | divórcio precisa de advogado | Divórcio e partilha |
+| 57 | Procuração no inventário extrajudicial: como o herdeiro se faz representar | procuração para inventário extrajudicial | Inventário e herança |
+| 58 | Documentos para pedir pensão alimentícia | documentos para pedir pensão alimentícia | Pensão alimentícia |
+| 59 | Como funciona a audiência de pensão alimentícia | audiência de pensão alimentícia | Pensão alimentícia |
+| 60 | O pai pode pedir pensão para o filho? | pai pode pedir pensão para filho | Pensão alimentícia |
+| 61 | Como entrar na Justiça pedindo pensão para o filho | como entrar com pedido de pensão alimentícia | Pensão alimentícia |
+| 62 | Justiça gratuita em ações de família: quem tem direito e como pedir | justiça gratuita pensão alimentícia | Pensão alimentícia |
+| 63 | Inventário judicial passo a passo: as etapas do processo | inventário judicial passo a passo | Inventário e herança |
+| 64 | Como acompanhar o processo de pensão pela internet | consulta processo de pensão alimentícia | Pensão alimentícia |
 
 ## Regras editoriais
 
@@ -106,3 +115,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-21 · Guarda compartilhada quando os pais moram longe um do outro
 - 2026-11-23 · Viagem internacional com o filho: autorização e documentos
 - 2026-11-24 · Quem paga as despesas extras do filho além da pensão
+- 2026-11-25 · Pensão para filho maior que está na faculdade
