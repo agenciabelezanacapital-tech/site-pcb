@@ -16,7 +16,6 @@ Ritmo: **um artigo por dia**, na ordem abaixo. Ao publicar, mover a linha para
 
 | # | Título | Palavra-chave alvo | Área |
 |---|---|---|---|
-| 47 | Exoneração de pensão: como pedir o fim da obrigação | exoneração de pensão alimentícia | Pensão alimentícia |
 | 48 | Pensão alimentícia quando quem paga é autônomo ou informal | pensão de pai autônomo | Pensão alimentícia |
 | 49 | Alimentos gravídicos: pensão durante a gravidez | alimentos gravídicos | Pensão alimentícia |
 | 50 | Desconto em folha e bloqueio de conta na cobrança da pensão | desconto em folha pensão alimentícia | Pensão alimentícia |
@@ -116,3 +115,4 @@ Nunca editar o HTML dentro de `/blog` à mão.
 - 2026-11-23 · Viagem internacional com o filho: autorização e documentos
 - 2026-11-24 · Quem paga as despesas extras do filho além da pensão
 - 2026-11-25 · Pensão para filho maior que está na faculdade
+- 2026-11-27 · Exoneração de pensão: como pedir o fim da obrigação
